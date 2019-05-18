@@ -1,0 +1,99 @@
+/***********************
+模块名：标签
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+
+.we-taglist{overflow: hidden;margin: 0 -4px -4px 0;}
+.we-taglist>li{float: left;padding: 0 4px 4px 0;}
+
+/* 标签-基础样式 */
+.we-tag{position:relative;display:block;height:24px;padding:0 5px;border:1px solid #d8d8d8;border-radius:2px;font-size:12px;line-height:22px;color:#3c3c3c;}
+.we-tag-txt,
+.we-tag-btn,
+.we-tag-input{display:block;}
+.we-tag-txt{max-width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+.we-tag-btn{position:absolute;top:0;right:0;width:22px;height:22px;cursor: pointer;font-size: 0;line-height: 0;}
+.we-tag-btn:before,
+.we-tag-btn:after{content: "";position: absolute;left:50%;top:50%;background-color: #3c3c3c;}
+.we-tag-btn:before{width: 9px;height:1px;margin:-1px 0 0 -5px;}
+.we-tag-btn:after{width: 1px;height:9px;margin: -5px 0 0 -1px;}
+.we-tag-btn:hover:before,
+.we-tag-btn:hover:after{background-color:#000;}
+
+/*标签删除、增加*/
+.we-tag--del,
+.we-tag--add{padding-right: 22px;}
+.we-tag--del .we-tag-btn:before,
+.we-tag--del .we-tag-btn:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+
+/*标签可编辑*/
+.we-tag--edit{width:110px;}
+.we-tag--edit:focus{outline:0 none;border-color:rgba(0,0,0,0.8);background:rgba(255,255,255,0.6);color: #333;}
+
+/*标签可点击*/
+.we-taglist--clickable .we-tag{cursor: pointer;}
+.we-taglist--clickable .we-tag:hover{background-color:rgba(164,164,164,0.12);border-color:rgba(164,164,164,1);}
+
+
+/* 标签-添加交互 */
+.we-tag--del.show{-webkit-animation:tagShowAnim .3s ease-out 0s 1 both;}
+@-webkit-keyframes tagShowAnim{
+    0%{
+        transform:scale(0);
+        -webkit-transform-origin:0 50%;
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        -webkit-transform-origin:0 50%;
+        opacity:1;
+    }
+}
+
+/* 标签-删除交互 */
+.we-tag--del.hide{
+    /*display:inline-block !important;*/
+    -webkit-animation:tagDelAnim .3s ease-out .2s 1 both;
+}
+.we-tag--del.hide .we-tag-btn{
+    -webkit-animation:tagDelIconAnim 1s ease-out 0s 1 both;
+}
+.we-tag--del.hide .we-tag-txt{
+    -webkit-animation:tagDelTxtAnim .3s ease-out 0s 1 both;
+}
+@-webkit-keyframes tagDelAnim{
+    0%{
+        max-width:200px;
+        opacity:1;
+    }
+    30%{
+        opacity:0;
+    }
+    100%{
+        border:0;
+        max-width:0;
+        padding:0;
+        margin:0;
+        opacity:0;
+    }
+}
+@-webkit-keyframes tagDelTxtAnim{
+    0%{
+        max-width:160px;
+        opacity:1;
+    }
+    100%{
+        max-width:0;
+        opacity:0;
+    }
+}
+@-webkit-keyframes tagDelIconAnim{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0);
+    }
+}

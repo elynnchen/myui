@@ -1,0 +1,40 @@
+/***********************
+模块名：无数据
+作者：elynnchen(陈红凌)
+************************/
+
+/*页面通用提示容器*/
+/*.we-box-center-flex{position:relative;width:100%;height:100%;text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;}*/
+
+/*页面通用提示*/
+.we-notification{width:100%;height:100%;/*padding:60px;*//*border-radius:4px;margin:0 auto;*/text-align:center;}
+.we-notification:before, 
+.we-notification-inner{display:inline-block;vertical-align:middle;width:400px;margin:0 auto;}
+.we-notification:before{content:"";width:0;height:100%;}
+.we-notification-figure{display:block;width:92px;height:38px;margin:0 auto;margin-bottom:20px;position:relative;margin-top:10px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAmBAMAAAC7eOHMAAAAHlBMVEUAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzPa2tpoYPIPAAAACXRSTlMALiEoBhkUCw6gn0xjAAABMUlEQVQ4y5WUPW/CMBCGozZ8jH0TQB1tFXVu2tLZVYvUsR9DV6rCDuIPwAK/gX8Ldhxj4C4c7xLn9Oh8vnvthFIDQJaIdQUgl+PX2MmI8VeLL8T4n8U/xfiXxZUYLyx+c45qVwtYdfxPyuG6X35bDu9VlSm22yO3aDq8W0bn3MA0kBmb/Mfh+W81YEUm9xUMC3gNTNIuOD9ohzwPsVf3XYPpaQpCT3C6JWfDSpG+IsW5rcXSPdYpfC3yagxtGbYWbqykHhj8TVCLDJe3JtxC3gb369X+IB0ab8Ard7b/D0ZL6vveLzer8uc0PkOpLFwAr2ntSVWYQ81Z00nh9zbHjX05Sf/xTcy8GWKD8QF958NHz1EUfYwrYuyq4ywMPoqeVgEePdRLAT6NJnGKby7ShfgW1lZ1HRIxnvoAAAAASUVORK5CYII=) 0 0 no-repeat;}
+.we-notification-tit{font-size:18px;color:#333;}
+.we-notification-des{color:#858585;font-size:14px;margin-top:4px;text-align:center;white-space: normal;}
+.we-notification-btns .we-button{font-weight:bold;margin-top:20px;}
+
+/*404页面提示*/
+/*.we-notification--404{width:500px;}*/
+.we-notification--404 .we-notification-figure{width:156px;height:156px;background:url(../images/icon-404.gif) no-repeat center;}
+
+/*浏览器不兼容提示*/
+/*.we-notification--browser{width:500px;}*/
+.we-notification--browser .we-notification-figure{width:156px;height:156px;background:url(../images/icon-404.gif) no-repeat center;}
+
+.we-browserlist{margin-top:30px;color:#000000}
+.we-browser{margin:0 10px;display:inline-block;width:80px;text-align:center;}
+.we-browser:hover{color:#61e1ff;}
+.we-browser-tit{font-size:12px;text-align:center;color:#4cbeff}
+.we-browser-logo{width:48px;height:48px;display:block;margin:0 auto;margin-bottom:10px;}
+.we-browser-ie{background-image:url(../images/icon-brow-ie.png);}
+.we-browser-chrome{background-image:url(../images/icon-brow-chrome.png);}
+.we-browser-qq{background-image:url(../images/icon-brow-qq.png);}
+
+/*专区建设中*/
+.we-notification--building .we-notification-figure{width:186px;height:186px;background:url(../images/icon-building.gif) center no-repeat;}
+
+/*页面级居中*/
+.we-notification--fullpage{position: absolute;left:0;top: 0;}

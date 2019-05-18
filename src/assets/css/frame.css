@@ -1,0 +1,26 @@
+/***********************
+模块名：框架布局
+作者：baronxiong
+说明：搭建页面主体框架
+************************/
+
+/*页面最外层容器*/
+.we-frame-wrap,
+/*头部导航通栏*/
+.we-frame-header,
+/*底部版权通栏*/
+.we-frame-footer,
+/*其他通栏*/
+.we-frame-row{width: 100%;}
+/*整个页面始终水平居中，避免有无滚动条的时候出现闪动*/
+.we-frame-wrap{padding-left: calc(100vw - 100%);}
+/*水平居中内容容器*/
+.we-frame-col{width:100%;max-width: 1000px;margin:0 auto;}
+.we-frame-main,
+.we-frame-aside{float: left;}
+.we-frame-main{width:72%;padding-right:20px;}
+.we-frame-aside{width:28%;}
+
+
+
+

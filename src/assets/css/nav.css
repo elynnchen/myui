@@ -1,0 +1,36 @@
+/*******************
+模块名：页面主导航
+作者：baronxiong
+********************/
+
+/*.we-nav{width:500px;height:100%;font-size:14px;margin-left:-16px;}
+.we-nav{position:relative;}
+.we-nav:after{content:"";clear:both;display:block;width:0;height:0;}
+.we-nav>li{position:relative;float:left;line-height:50px;}
+.we-nav-item{color:#3c3c3c;display:block;margin:0 14px;padding:0 2px;}
+.we-nav>li:hover .we-nav-item,
+.we-nav>li.cur .we-nav-item{color:#3c3c3c;}
+.we-nav>li.cur .we-nav-item{height:50px;line-height:50px; font-weight:bold;}
+*/
+/*动画*/
+/*.we-nav>li:after{content:"";position:absolute;left:100%;bottom:0;width:0;height:2px;background-color:#faab00;transition:all 0.3s ease-out;}
+.we-nav>li:hover:after{left: 0;width: 100%;}
+.we-nav>li:hover~li:after{left: 0}*/
+
+/*主导航*/
+.we-nav{/*width:500px;*/height:100%;font-size:15px;margin-left:-16px;}
+.we-nav:after{content:"";clear:both;display:block;width:0;height:0;}
+.we-nav>li{float:left;line-height:50px;}
+.we-nav-item{color:#333;display:block;margin:0 14px;padding:0 2px;position: relative;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+
+
+.we-nav-item:after{content: "";position: absolute;left: 0;bottom: 0;width:100%;height: 4px;background-color: #faab00;opacity: 0;-webkit-transition: all .2s ease-in-out;transition: all .2s ease-in-out;-webkit-transform: scaleX(0);transform: scaleX(0);transform-origin: 50% 100%;}
+
+/*hover态*/
+.we-nav>li:hover .we-nav-item,
+.we-nav>li.cur .we-nav-item{color:#333;}
+.we-nav-item:hover:after{opacity: 1;-webkit-transform: scaleX(1);transform: scaleX(1);}
+
+/*当前态*/
+.we-nav>li.cur .we-nav-item{font-weight:bold;}
+.we-nav>li.cur .we-nav-item:after{opacity: 1;-webkit-transform: scaleX(1);transform: scaleX(1);}

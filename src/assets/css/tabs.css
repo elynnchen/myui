@@ -1,0 +1,44 @@
+/***********************
+模块名：选项卡
+作者：任寒韬
+修改：baronxiong
+************************/
+
+/**** 选项卡-小型 ****/
+/*跟其他元素混排的时候不换行*/
+.we-tabs-nav{display: inline-block;vertical-align: middle;}
+/*用伪类清除浮动，兼容需要插入下拉框等场景*/ 
+.we-tabs-nav:after{content: "";display:block;width: 0;height: 0;clear: both;}
+.we-tabs-nav>li{position:relative;float:left;}
+.we-tabs-item{display:block;cursor: pointer;} 
+.we-tabs-nav>li.cur .we-tabs-item{cursor:default;}
+
+/**** 选项卡-小型 ****/
+/*.we-tabs--small{height:40px;}*/
+.we-tabs-nav--small>li{border-right:1px solid rgba(255,255,255,0.1);}
+.we-tabs-nav--small>li:after{content:"";position:absolute;right:0;top:50%;width:1px;height:12px;margin-top:-6px;background:#D1D1D1;}
+.we-tabs-nav--small>li:last-child:after{display:none;}
+.we-tabs-nav--small .we-tabs-item{padding:0 10px;font-size:12px;line-height:40px;color:#333333;}
+.we-tabs-nav--small .we-tabs-item:hover,
+.we-tabs-nav--small>li.cur .we-tabs-item{color:#FCAA00;}
+
+/*.we-tabs--small>li:only-child a:hover{color:#333333;cursor:default;}*/
+
+/**** 选项卡-大型 ****/
+/*.we-tabs--large{height:50px;}*/
+.we-tabs-nav--large>li{border-right:1px solid rgba(255,255,255,0.1);}
+.we-tabs-nav--large>li:after{content:"";position:absolute;right:0;top:50%;width:1px;height:18px;margin-top:-9px;background:#e4e4e4;}
+.we-tabs-nav--large>li:last-child:after{display:none;}
+.we-tabs-nav--large .we-tabs-item{padding:0 22px;font-size:14px;line-height:50px;color:#333333;}
+.we-tabs-nav--large .we-tabs-item:hover, 
+.we-tabs-nav--large>li.cur .we-tabs-item{color:#FCAA00;}
+/*.we-tabs--large>li:only-child a:hover{color:#333333;cursor:default;}*/
+
+/**** 选项卡-按钮 ****/
+.we-tabs-nav--button{height:26px;border:1px solid rgba(0,0,0,0.2);border-radius:26px;overflow: hidden;}
+.we-tabs-nav--button>li{float:left;min-width:72px;text-align:center;border-right:1px solid rgba(0,0,0,0.2);}
+.we-tabs-nav--button>li:last-child{border-right:0 none;}
+.we-tabs-nav--button .we-tabs-item{padding:0 12px;font-size:12px;line-height:24px;color:#333;}
+.we-tabs-nav--button .we-tabs-item:hover{background:#c4c4c4;color:#333;}
+.we-tabs-nav--button>li.cur .we-tabs-item{background:rgba(0,0,0,0.7);color:#fff;}
+/*.we-tabs--button>li:only-child a{background:rgba(0,0,0,0.7);color:#fff;cursor:default;}*/

@@ -1,0 +1,38 @@
+/***********************
+模块名：alert-toast气泡
+作者：elynnchen
+************************/
+
+
+/*.we-center-wp .we-toast{position:relative;left:auto;top:auto;}*/
+
+.we-toast{position:relative;display:inline-block;vertical-align:middle;background:#fff;border:1px solid #b2b2b2;box-shadow:0 3px 7px -3px rgba(0, 0, 0, .2), 0 4px 8px -4px rgba(0, 0, 0, .2);font-size:12px;min-width:150px;border-radius:4px;z-index:200; text-align:left;padding-bottom:10px;}
+.we-toast-bd{position:relative;margin:20px ;margin-bottom:10px;}
+.we-toast-icon{position:absolute;top:1px;left:0;}
+.we-toast-tit,
+.we-toast-des{padding-left: 20px;}
+.we-toast-tit{font-size:12px;color:#333;font-weight:bold;word-break:break-all;word-wrap:break-word;white-space:normal;}
+.we-toast-des{font-size:12px;color:#858585;word-break:break-all;word-wrap:break-word;white-space:normal;}
+.we-toast-close{position:absolute;right:0;top:0;font-size:24px;line-height:24px;width:24px;height:24px;color:#858585;cursor:pointer;font-weight:100;text-align:center;}
+.we-toast-close:hover{color:#333;}
+.we-toast-ft{position:relative;padding:0 10px;}
+.we-toast-opreate{width:100%;text-align:right; bottom:-10px;}
+.we-toast-btn{width:70px;line-height:18px;font-weight:bold;height:20px;min-width:70px;}
+
+.we-toast.show{z-index:1;opacity:1;}
+.we-toast.hide{opacity:0;z-index:-1;}
+
+/*扩展*/
+/*.we-toast--b,*/
+.we-toast--s{min-width:100px; }
+.we-toast--l{width:240px;}
+.we-toast--xl{width:400px;}
+
+.we-toast--txt .we-toast-icon{display: none;}
+.we-toast--txt .we-toast-tit,
+.we-toast--txt .we-toast-des{padding-left: 0}
+
+/*动画*/
+.we-toast.we-has-animate{opacity:0;}
+.we-toast.we-has-animate.show{animation:fadeup-in .2s linear .2s both;}
+.we-toast.we-has-animate.off{animation:fadeup-out .2s linear .2s both;}

@@ -1,0 +1,14 @@
+/***********************
+模块名：we-alert
+作者：baronxiong
+************************/
+
+/*反馈样式*/
+.we-alert{position:relative;min-height:50px;padding:2px 0 2px 67px;margin:30px;}
+.we-alert-tit{font-size:16px;color:#333;font-weight:700;}
+.we-alert-des{font-size:14px;color:#858585;}
+.we-alert-icon{position:absolute;left:0;top:50%;margin-top:-25px;}
+
+/*纯文本样式*/
+.we-alert--txt{padding-left:0;}
+.we-alert--txt .we-alert-icon{display:none;}

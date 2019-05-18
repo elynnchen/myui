@@ -1,0 +1,13 @@
+/*******************
+模块名：面包屑
+作者  ：baronxiong
+********************/
+
+.we-breadcrumb,
+.we-breadcrumb>li{display:inline-block;font-size:0;white-space:nowrap;word-wrap:normal;}
+.we-breadcrumb>li:after,
+.we-breadcrumb-item{display:inline-block;vertical-align:top;font-size:16px; line-height:26px;color:#333;cursor: pointer;}
+.we-breadcrumb>li:after{content:">";margin:0 10px;}
+.we-breadcrumb-item:hover{color:#faab00}
+.we-breadcrumb>li:nth-last-of-type(1) .we-breadcrumb-item{color:#858585;cursor:default;}
+.we-breadcrumb>li:nth-last-of-type(1):after{display:none;}

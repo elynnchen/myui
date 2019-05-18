@@ -1,0 +1,15 @@
+/*******************
+模块名：打分组件
+作者  ：任寒韬
+********************/
+
+/*.we-markscore,.we-markscore .we-markscore-bar{font-size: 0;white-space: nowrap;word-wrap:normal;}
+.we-markscore .we-markscore-tit,.we-markscore .we-markscore-bar,.we-markscore .we-markscore-tips{display: inline-block;vertical-align: middle;}
+.we-markscore .we-markscore-item{display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc2NUVDNDRCQUExNzExRTZCMkVDOEQ2NDM4N0YzM0JEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc2NUVDNDRDQUExNzExRTZCMkVDOEQ2NDM4N0YzM0JEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzY1RUM0NDlBQTE3MTFFNkIyRUM4RDY0Mzg3RjMzQkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzY1RUM0NEFBQTE3MTFFNkIyRUM4RDY0Mzg3RjMzQkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5WMhc9AAAB3UlEQVR42syXTygEURzHZ7elSCmi/Ns9oKQk5CAOe5GypBxE/hwkpfzJiRwUEkcXOYgcnFyUkotkb7bIQSnFRUS7JesgbSa+r35b0zTjzex7M+NXn9rZt/Pms783773f873GE4pgVIIw2BHpxK+IxzJYAbleitSDflACZrwUWdX0MQcKvBBpAxHNdT6Y90JkzeC7SVDmpkiEMqKPHLDolojfJBvpGAXVbogMgro/2gM0nR0VyQZLFn7XBxrsdBzgtBeBJg3NoNxCvz5wDi7BlYYH8GN4g2aJLwaNugcHFbnxDq51cvdMjokw+z0wongTTKTVT6maBjceSHyCIRBPv6xJ0AmeXJRQwQCI6WcNk+gACRck2ChMgCOz6XsLuillTsYC2OatIzFKmeqQxBZYt7qgsZSNm815gTgEU3ZX1l1Koaw4oyJKzWSJZyk8kCDxAnpBSmSveZM0VZOim15IgkgpyBIVkbHfsOdU/IeMcP8QT6QQ5EkSCYmIyCwDhER4w/IMZkEPuHByaMxEHunoUAU2aCVuAe0g6sbQsFJvjKr0TfClaz+lA3mYPksfmjswDGro1J/i3Bel7LAsHdOeFaRaNiORD9qJa8E++Lb5grL3povq3xOqiw3jV4ABAAqzW1t8YXQuAAAAAElFTkSuQmCC);}
+.we-markscore .we-markscore-item.cur{background-color: #ff8870}
+.we-markscore .we-markscore-tit,.we-markscore .we-markscore-tips{font-size:14px;line-height:20px;color: #858585;}
+.we-markscore .we-markscore-item{width:34px;height: 32px;cursor: pointer;}
+.we-markscore .we-markscore-item:hover{background-color: #e3e5e5}
+.we-markscore .we-markscore-item.cur:hover{background-color: #fa7357}
+.we-markscore .we-markscore-tips{font-size: 14px;color: rgba(102,102,102,0.8);text-align: center;line-height: 18px;}
+*/

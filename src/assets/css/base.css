@@ -1,0 +1,189 @@
+/*********************
+模块名：基础样式
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+
+/*a标签*/
+a{color:#faab00;}
+a:hover{color:#faab00;}
+
+/*段落*/
+p{color:#858585;}
+
+/*超链接*/
+.we-link{display:inline-block;font-size: 12px;color: #8c8c8c;vertical-align: middle;}
+.we-link:hover{color: #faab00}
+
+/*滚动条*/
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-thumb{border-radius:10px;}
+/*深色滚动条 用在浅色背景的页面上*/
+::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.3);}
+::-webkit-scrollbar-thumb:hover{background-color: rgba(0,0,0,0.4);}
+/*浅色滚动条 用在深色背景的页面上 追加在body标签上*/
+.we-scrollbar--light::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,0.3);}
+.we-scrollbar--light::-webkit-scrollbar-thumb:hover{background-color: rgba(255,255,255,0.6);}
+
+
+
+/*状态原子类*/
+/*选中、当前*/
+.cur{}
+/*下拉菜单选中*/
+.selected{}
+/*显示*/
+.show{}
+/*隐藏*/
+.hide{}
+/*展开*/
+/*.expand{}*/
+.open{}
+/*折叠*/
+/*.unexpand{}
+.collapse{}
+.fold{}*/
+/*.off{}*/
+.close{}
+/*不可用*/
+.disabled{}
+/*错误*/
+.error{}
+/*成功*/
+.success{}
+/*警告*/
+.wran{}
+/*可点击*/
+.clickable{}
+/*固定定位*/
+.fixed{}
+
+/*图片加载出错隐藏图片碎图*/
+img.error{opacity: 0}
+
+/*清除浮动*/
+.we-clearfix:after{content:"";display: block;width: 0;height: 0;clear: both;}
+
+
+
+/*半透明遮罩*/
+.we-mask{position:fixed;left:0;top:0;width: 100%;height:100%;z-index:200;/*overflow:hidden;overflow-y:auto;*/background-color: rgba(0,0,0,0.5);}
+
+/*inline-block元素垂直居中容器*/
+/*子元素水平、垂直对齐方式*/
+[class*="we-align"]{display: block;}
+[class*="we-align-v"]{width:100%;height:100%;font-size:0;word-wrap:normal;white-space:nowrap;}
+/*水平居左*/
+.we-align-hl{text-align: left;}
+/*水平居中*/
+.we-align-hc{text-align: center;}
+/*水平居右*/
+.we-align-hr{text-align: right;}
+/*垂直居中*/
+.we-align-vc:before{content:"";display:inline-block;width:0;height:100%;vertical-align:middle;}
+
+
+
+
+
+
+
+
+/*文本颜色*/
+/*.txt-em{color:#faab00 !important;}
+.txt-em1{color:#FFCE51 !important;}
+.txt-em2{color:#FFCE51 !important;}
+.txt-em3{color:#FFCE51 !important;}
+.txt-em4{color:#f64949 !important;}
+
+.tx-tit{ color:#3c3c3c}
+.tx-thin{color: rgba(60, 60, 60, 0.59);}
+.tx-thin--a{color: rgba(60, 60, 60, 0.3);}
+.tx-em{color:#faab00;}
+.tx-error{color:#FF5C2B;}
+.tx-em--a{color:#ff5400;}
+.tx-em--b{color:#04c743;}*/
+
+/*特殊链接*/
+
+/*深灰无下划线*/
+/*.link-a1,
+a.link-a1{color:#333;text-decoration:none;}
+.link-a1,
+a.link-a1:hover{color:#f69c00;text-decoration:none;}
+.link-a1.disabled,
+a.link-a1.disabled,
+.link-a1.disabled:hover,
+a.link-a1.disabled:hover{color:rgba(51,51,51,0.3);}*/
+
+/*深灰有下划线*/
+/*.link-a2,
+a.link-a2{color:#333;text-decoration:underline;}
+.link-a2,
+a.link-a2:hover{color:#f69c00;text-decoration:underline;}
+.link-a2.disabled,
+a.link-a2.disabled,
+.link-a2.disabled:hover,
+a.link-a2.disabled:hover{color:rgba(51,51,51,0.3);text-decoration:underline;}
+*/
+/*浅灰无下划线*/
+/*.link-b1,
+a.link-b1{color:#858585;text-decoration:none;}
+.link-b1,
+a.link-b1:hover{color:#6b6b6b;text-decoration:none;}
+.link-b1.disabled,
+a.link-b1.disabled,
+.link-b1.disabled:hover,
+a.link-b1.disabled:hover{color:rgba(51,51,51,0.3);}*/
+
+/*浅灰有下划线*/
+/*.link-b2,
+a.link-b2{color:#858585;text-decoration:underline;}
+.link-b2,
+a.link-b2:hover{color:#6b6b6b;text-decoration:underline;}
+.link-b2.disabled,
+a.link-b2.disabled,
+.link-b2.disabled:hover,
+a.link-b2.disabled:hover{color:rgba(51,51,51,0.3);}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*清除浮动*/
+/*.cf:after{content:"";display:block;width:0;height:0;clear:both;}*/
+/*悬浮定位*/
+/*.fixed{position:fixed;}*/
+/*右浮动*/
+/*.f-right{float:right}*/
+/*左浮动*/
+/*.f-left{float:left}*/
+/*显示*/
+/*.show{display:block;}*/
+/*隐藏*/
+/*.hide{display:none !important;}*/
+/*隐藏容器*/
+/*.hidden{overflow:hidden;}*/
+/*禁用*/
+/*.disabled{cursor:default;}*/
+/*可点击*/
+/*.click{cursor:pointer;} */
+/*容器*/
+/*.viewport{overflow:hidden;}*/
+/*图片调取失败去除img默认边框注：追加到img标签上 <img class="img-onerror">*/
+/*.img-onerror{opacity:0;}*/
+/*截断*/
+/*.ellip{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}*/
+
+
+
+/*.we-center-wp{font-size:0;word-wrap:normal;white-space:nowrap; text-align:center; display:block;width:100%;height:100%;}
+.we-center-wp:before{content:"";display:inline-block;width:0;height:100%;vertical-align:middle;}*/

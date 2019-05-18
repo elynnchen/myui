@@ -1,0 +1,18 @@
+/***********************
+模块名：价格
+作者：陈红凌
+************************/
+
+.we-price{height:27px; display:inline;}
+.we-price-new:only-child{font-weight:normal;color:#858585;font-size:14px;}
+.we-price-old{color:rgba(51, 51, 51, 0.6);text-align:left;font-size:14px;}
+.we-price-new{color:#ff5400;font-size:16px;font-weight:bold;letter-spacing:-0.5px; padding-left:4px;}
+.we-price-tag{font-weight:bold; color:#fff; background-color:#ff5400;border-radius:2px;
+    height:20px;display:inline-block; margin-right:5px; padding:0 6px; line-height:20px;font-size:14px}
+.we-price-tag i{font-size:12px;}
+.we-price-new>i,
+.we-price-old>i{display:inline-block;padding-right:2px;}
+.we-price-new>i{font-size:12px;font-weight:normal;}
+.we-price-ads{padding:0 6px;color:#fff;background-color:#04c743;height:20px; line-height:20px; display:inline-block;border-radius:2px;font-size:12px}
+.we-price-tips-txt{background-color:#ff8417;color:#fff;line-height:20px;display:inline-block;height:20px;padding:0 6px;border-radius:2px; margin:-3px 6px 0 0;vertical-align:middle;}
+.we-tx-price{padding:0 0 0 4px;}

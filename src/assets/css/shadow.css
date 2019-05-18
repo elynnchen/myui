@@ -1,0 +1,13 @@
+/***********************
+模块名：阴影
+作者：任寒韬
+************************/
+
+.we-shadow-box{width:120px;height:120px;display:inline-block; margin:15px;background:#fff;box-shadow:0 1px 1px rgba(0, 0, 0, .24);text-align:center;line-height:120px; }
+.we-shadow1{box-shadow:0 2px 1px -2px rgba(0, 0, 0, 0), 0  2px 1px -1px rgba(0, 0, 0, .1);}
+.we-shadow2{box-shadow:0 2px 4px -2px rgba(0, 0, 0, .2), 0 3px 6px -3px rgba(0, 0, 0, .2);}
+.we-shadow3{box-shadow:0 3px 7px -3px rgba(0, 0, 0, .2), 0 4px 8px -4px rgba(0, 0, 0, .2);}
+.we-shadow4{box-shadow:0 4px 8px -3px rgba(0, 0, 0, .2), 0 5px 10px -5px rgba(0, 0, 0, .2);}
+.we-shadow5{box-shadow:0 5px 10px -3px rgba(0, 0, 0, .2), 0 6px 12px -6px rgba(0, 0, 0, .2);}
+.we-shadow6{box-shadow:0 6px 12px -3px rgba(0, 0, 0, .2), 0 7px 14px -7px rgba(0, 0, 0, .2);}
+.we-shadow7{box-shadow:0 7px 14px -3px rgba(0, 0, 0, .1), 0 8px 16px -8px rgba(0, 0, 0, .2);}

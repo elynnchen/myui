@@ -1,0 +1,41 @@
+/***********************
+模块名：panel
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+
+.we-panel{width:100%;margin-bottom:20px;border-radius:4px;}
+
+.we-panel-hd{position:relative;height:40px;/*padding:0 16px;*/}
+.we-panel-hd-l,
+.we-panel-hd-r{font-size: 0;white-space: nowrap;word-wrap:normal;}
+.we-panel-hd-l{text-align: left;}
+.we-panel-hd-r{position:absolute;right:0;top:0;height:100%;/*padding-right:16px;*/text-align: right;}
+.we-panel-hd-l:before,
+.we-panel-hd-r:before{content: "";display: inline-block;width: 0;height: 100%;vertical-align: middle;}
+
+.we-panel-tit, 
+.we-panel-subtit{display:inline-block;vertical-align: middle;}
+.we-panel-tit{font-size:16px;line-height:40px;color:#000;}
+
+.we-panel-subtit{position:relative;margin:0 10px;font-size:12px;line-height:16px;color:#858585;}
+.we-panel-subtit:after{content:"";width:7px;height:7px;display:inline-block;border:2px solid #ffc548;border-top:0;border-left:0;margin-left:5px;position:absolute;right:-14px;bottom:-5px;}
+
+
+
+.we-panel-bd{background-color:rgba(255,255,255,0.05);/*padding:16px;*/position:relative;}
+
+
+/*无背景*/
+/*.we-panel--a{background:none;}
+.we-panel--a .we-panel-hd{border:none;}
+.we-panel--a .we-panel-tit{padding-left:0;}*/
+
+/*有背景*/
+.we-panel--bg{background:#fff;}
+.we-panel--bg .we-panel-hd{padding:0 16px;border-bottom:1px solid #e4e4e4;}
+.we-panel--bg .we-panel-hd-r{padding-right: 16px;}
+.we-panel--bg .we-panel-bd{padding: 16px;}
+
+/*模块容器有背景*/
+.we-panel--bdbg .we-panel-bd{padding:16px;background:#fff;}

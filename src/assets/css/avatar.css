@@ -1,0 +1,10 @@
+/***********************
+模块名：头像
+作者：baronxiong
+************************/
+.we-avatar{display: block;width:120px;height:120px;background:url(../images/icon-avatar.jpg) no-repeat;cursor:pointer;background-size:100% 100%;}
+.we-avatar>img{width: 100%;height: 100%;object-fit:cover;}
+
+/*圆形头像样式*/
+.we-avatar--circle, 
+.we-avatar--circle>img{border-radius:50%}

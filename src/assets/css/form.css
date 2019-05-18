@@ -1,0 +1,100 @@
+/***********************
+模块名：form
+作者：elynnchen
+************************/
+
+/*.we-form-label{ float:left;width:89px;height:21px;line-height:21px;
+  text-align:left;font-size:14px;color:#333;font-weight: bold;vertical-align: top;}
+*/
+/*.we-controls{margin-left: 110px;padding-bottom:30px;}
+
+.we-form-group { border-bottom:1px solid rgba(0, 0, 0, 0.06);margin-bottom: 17px;font-size: 14px;}
+.we-form-group:after,
+.we-form-row-col:after,
+.we-controls:after{content:"";display:block;width:0;height:0;clear:both;}
+*/
+/*划分格子*/
+/*.we-form-row-wp{margin-bottom:20px;}
+.we-form-row-wp:last-child{margin-bottom: 0;}
+.we-form-row-tit{padding-bottom:8px;}
+.we-form-row-wp .we-form-row:last-child,
+.we-form-row:last-child{margin-bottom:0;}
+.we-form-row-wp .we-form-row .we-form-col{padding-bottom:0;}
+.we-form-row .we-form-col:only-child{width:100%;display: block;}
+.we-form-row{margin-bottom:13px;display: block;}
+.we-form-row-col.we-fix-colwidth{margin-bottom:-13px; }
+.we-form-row-col .we-form-col{margin-right:8px;display:block;float:left;padding-bottom:13px;}
+.we-form-row-col.we-fix-colwidth .we-form-col{width:158px;margin-right:20px;}
+.we-form-row .we-button,
+.we-form-row-col .we-button{min-width:70px; line-height: 22px;}
+*/
+
+
+
+/*表单功能区*/
+/*.we-form-actions:before,
+.we-form-actions:after { display:table;content:"";}
+.we-form-actions:after { clear:both;}*/
+/*右边非输入框使用*/
+/*.we-form-item-tx {height:28px;font-size:13px;line-height:28px;margin-right:5px;}
+.we-form-item-tx label{padding-right:5px;}*/
+/*提示文字*/
+/*.we-we-help-block,
+.we-help-inline,
+.we-help-tips { color: #858585;font-size:13px;}
+.we-we-help-block { display:block;}
+.we-help-inline ,
+.text-inline{ display:inline-block;padding-left:5px;vertical-align:middle;}
+.we-text-inline{color: #333;padding-right:5px;}
+.we-we-help-block--indent{padding-left:24px;}
+.we-help-tips{color:#e11515}
+.we-form-group.warning .we-help-block,
+.we-form-group.warning .we-help-inline { color:#e11515;}
+.we-form-group.warning .checkbox,
+.we-form-group.warning .radio,
+.we-form-group.warning .ipt,
+.we-form-group.warning select,
+.we-form-group.warning textarea{border-color: #f64949;background: #fff5f5;color: #333;}
+*/
+
+
+/*表单*/
+.we-form{color: #3c3c3c;padding:30px;display: block;}
+.we-form-hd,
+.we-form-bd,
+.we-form-ft{}
+.we-form-tit{line-height: 24px;font-size: 16px;font-weight: bold;padding:0 0 20px; border-bottom:1px solid rgba(0, 0, 0, 0.06);margin-bottom:18px;}
+
+/*表单项*/
+.we-form-item{border-bottom: 1px solid rgba(0, 0, 0, 0.06);margin-bottom: 17px;font-size: 14px;}
+.we-form-item-tit{margin-bottom:16px;font-size:14px;color:#333;font-weight: bold;}
+.we-form-item-cont{padding-bottom: 30px;}
+/*表单项标题与表单项内容水平排列*/
+.we-form-item--h{position: relative;padding-left: 110px;}
+.we-form-item--h .we-form-item-tit{position:absolute;left:0;top:0;width: 90px;}
+.we-form-item--h .we-form-item-cont{width: 100%;}
+
+/*表单元素列表分组*/
+.we-form-elms{margin-bottom: 30px;}
+.we-form-elms:nth-last-of-type(1){margin-bottom: 0}
+.we-form-elms-des{margin-bottom:12px;font-size:14px;color: #333}
+
+/*表单元素列表*/
+.we-form-elmlist>li{margin-bottom:12px}
+/*表单元素列表水平排列*/
+.we-form-elmlist--h{margin-right: -20px;}
+.we-form-elmlist--h:after{content: "";display: block;width: 0;height: 0;clear: both;}
+.we-form-elmlist--h>li{float: left;width: 160px;padding-right:20px;}
+
+/*表单元素容器*/
+.we-form-label{display:inline-block;max-width:100%;line-height: 24px;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;vertical-align: top;}
+
+/*操作按钮*/
+.we-form-oprate{ padding-left:110px;}
+.we-form-oprate .we-button{margin-right:10px;}
+
+
+
+
+
+

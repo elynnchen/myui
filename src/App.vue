@@ -1,13 +1,25 @@
 <template>
   <div id="app" class="wgdesign">
+    <div class="wgdesign-header">
+      <h1>MyUI</h1>
+      <ul class="wgdesign-nav">
+        <li></li>
+
+      </ul>
+    </div>
     <div class="wgdesign-aside">
       <ul class="wgdesign-menu-main">
         <li>
-           <router-link to="/button">按钮</router-link>
+          <a href="#">基础组件</a>
+          <ul class="wgdesign-menu-sub">
+            <li>     <router-link to="/button">按钮</router-link></li>
+            <li>
+              <router-link to="/input">input</router-link>
+            </li>
+          </ul>
+
         </li>
-        <li>
-          <router-link to="/input">input</router-link>
-        </li>
+
       </ul>
 
     </div>

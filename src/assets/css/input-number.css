@@ -1,0 +1,28 @@
+/***********************
+模块名：数字输入框
+作者：richiepu（普伟）
+************************/
+
+/*数字输入框*/
+.we-input-number{position:relative;display:inline-block;width:110px;padding-right:21px;}
+.we-input-number .we-input{height: 27px;line-height:19px;}
+/*.we-input-number .we-input{width:100%;height:27px;text-align:center;}*/
+.we-input-number-btn{position:absolute;right:0;width:19px;height:12px;border-radius:2px;border:1px solid #aeaeae;background:rgba(255,255,255,0.2);cursor:pointer;}
+
+.we-input-number-minus{bottom:0;}
+.we-input-number-plus{top:0;}
+
+.we-input-number-btn:after{content:"";width:8px;height:4px;position:absolute;top:50%;left:50%;margin:-2px 0 0 -4px;z-index:2;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAS0lEQVQImWXMwQ2AIABD0Sf7GCZxAEfQxHV0D06uwJG4CzcSL3DRXpr2N53iHE9s/rrKU/aAA+kDU+8FNKzIHeae2xhAxYK7ex1XL+3lDsLeHSs4AAAAAElFTkSuQmCC) no-repeat 0 0;background-size:8px 4px;opacity:0.5;}
+.we-input-number-plus:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);margin-left:-5px;}
+
+.we-input-number-btn:hover{background:rgba(164,164,164,.12);}
+.we-input-number-btn:hover:after{opacity:1;}
+
+.we-input-number-btn.disabled,
+.we-input-number-btn.disabled:after{opacity:0.35;cursor:default;}
+
+.we-input-number[class*="we-input-number--money"]:before{position: absolute;left:10px;top:0;padding:3px 0;font-size: 13px;line-height: 21px;color: #333;}
+.we-input-number[class*="we-input-number--money"] .we-input{padding-left: 20px;}
+
+.we-input-number--money-rmb:before{content: "￥";}
+.we-input-number--money-usd:before{content: "$";}

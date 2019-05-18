@@ -1,0 +1,25 @@
+/***********************
+模块名：数据列表
+作者：rexren（任寒韬）
+************************/
+
+/* 数据列表-原生table */
+.we-table-data .we-thead th,
+.we-table-data .we-tbody td{padding:10px;text-align:center;}
+.we-table-data .we-thead th{font-weight:100;color:#B4B4B4;background:#FAFAFA;}
+
+/* 数据列表-div模拟 */
+.we-table-data--a .we-thead{text-align:center;}
+.we-table-data--a .we-item-list:after{content:"";clear:both;}
+.we-table-data--a .we-item-list .we-item{float:left;text-align:center;}
+/*横向布局 2列*/
+.we-table-data--a .we-item-list.we-item-list-2 .we-item{width:50%;}
+/*横向布局 3列*/
+.we-table-data--a .we-item-list.we-item-list-3 .we-item{width:33.333%;}
+/*横向布局 4列*/
+.we-table-data--a .we-item-list.we-item-list-4 .we-item{width:25%;}
+/*横向布局 5列*/
+.we-table-data--a .we-item-list.we-item-list-5 .we-item{width:20%;}
+.we-table-data--a .we-thead .we-item,
+.we-table-data .we-tbody .we-item{padding:10px;}
+.we-table-data--a .we-thead .we-item{font-weight:100;color:#B4B4B4;background:#FAFAFA;}

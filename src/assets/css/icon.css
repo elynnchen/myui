@@ -1,0 +1,85 @@
+/***********************
+模块名：图标
+作者：rexren（任寒韬）
+************************/
+
+/*反馈图标*/
+[class*="we-icon"]{width:16px;height:16px;display:inline-block;vertical-align:middle;background-image:url(../images/icon-confirm.png);background-repeat:no-repeat;}
+
+/*.we-icon-qa{background-position:0 0;}
+.we-icon-qw{background-position:0 -16px;}
+.we-icon-new{background-position:0 -230px;}*/
+
+.we-icon-success,
+.we-icon-warning,
+.we-icon-error,
+.we-icon-info{width: 50px;height: 50px;}
+
+.we-icon-success{background-position: 0 -32px;}
+.we-icon-success.we-icon--size-s{background-position:0 -82px;}
+
+.we-icon-warn{width:50px;height:50px;background-position:0 -98px;} /*跟we-icon-warning重复*/
+.we-icon-warn.we-icon--size-s{background-position:0 -148px;}
+/*.we-icon-warning {background-position: 0 -98px;}*/
+
+.we-icon-error {background-position: 0 -164px;}
+.we-icon-error.we-icon--size-s{background-position:0 -214px;}
+
+.we-icon-info{width:50px;height:50px;background-position:0 -246px;} /*跟we-icon-info重复*/
+.we-icon-info.we-icon--size-s{background-position:0 -296px;}
+/*.we-icon-info {background-position: 0 -246px;}*/
+
+/*删除*/
+.we-icon-delete{width:20px;height:20px;background:url(../images/icon-delete.png) no-repeat center center;}
+.we-icon-delete:hover{background-image:url(../images/icon-delete-h.png);}
+.we-icon-delete.disabled{background-image:url(../images/icon-delete-dis.png);}
+
+/*图标*/
+
+.we-icon-q,
+/*.we-icon-question-w,*/
+.we-icon-tips/*,
+.we-icon-tips-warn-w,
+.we-icon-v-normal,
+.we-icon-v-game,
+.we-icon-hot-feeds,
+.we-icon-user-task,
+.we-icon-user-money,
+.we-icon-user-share,
+.we-icon-userarea,
+.we-icon-basicinfo,
+.we-icon-jointime,
+.we-icon-interested,
+.we-icon-hot-feeds,
+.we-icon-sign*/{cursor:default;position:relative;width:20px;height:20px;vertical-align:middle;background-repeat: no-repeat;background-position: 50% 50%;}
+.we-icon-q{background-image:url(../images/icon-tips-question-01.png);}
+.we-icon-q.we-icon--color-w{background-image:url(../images/icon-tips-question-02.png);}
+.we-icon-tips{background-image:url(../images/icon-tips-warn-01.png);}
+.we-icon-tips.we-icon--color-w{background-image:url(../images/icon-tips-warn-02.png);}
+
+/*.we-icon-v-normal{background-image:url(../images/icon-v-normal.png);cursor:pointer;}
+.we-icon-v-game{background-image:url(../images/icon-v-game.png);cursor:pointer;}
+.we-icon-user-task{background-image:url(../images/icon-user-task.png);}
+.we-icon-user-money{background-image:url(../images/icon-user-money.png);}
+.we-icon-user-share{background-image:url(../images/icon-user-share.png);}
+.we-icon-sign{background-image:url(../images/icon-sign.png);}
+.we-icon-userarea{background-image:url(../images/icon-userarea.png);}
+.we-icon-basicinfo{background-image:url(../images/icon-basicinfo.png);}
+.we-icon-jointime{background-image:url(../images/icon-jointime.png);}
+.we-icon-interested{background-image:url(../images/icon-interested.png);}
+.we-icon-hot-feeds{background-image:url(../images/icon-host-feeds.png);}
+*/
+/*回到顶部*/
+.we-icon-up{/*position:fixed;bottom:20px;left:50%;z-index:100;*/width:40px;height:40px;background:url(../images/icon-gotop.png) no-repeat;/*cursor:pointer;opacity:0.8;*/}
+/*.we-icon-up:hover{opacity:1;}*/
+
+/*视频播放按钮*/
+.we-icon-play{position:relative;width:48px;height:48px;vertical-align:middle;background:url(../images/icon-player.png) no-repeat center center;background-size:100% 100%;}
+
+
+/*尺寸大小扩展*/
+.we-icon--size-s{width: 16px;height: 16px;}
+
+/*图标颜色扩展*/
+/*白色风格*/
+.we-icon--color-w{}

@@ -1,0 +1,75 @@
+/***********************
+模块名：翻页
+作者：任寒韬
+************************/
+
+/*翻页-列表翻*/
+.we-pagination,
+.we-pagination-numlist{font-size:0;white-space: nowrap;word-wrap:normal;}
+.we-pagination{padding:5px 0;margin: 0 -2px;}
+.we-pagination-num,
+.we-pagination-numlist,
+.we-pagination-btn,
+.we-pagination-counter{display: inline-block;vertical-align: bottom;}
+
+.we-pagination-num,
+.we-pagination-btn{text-align:center;min-width:26px;height:24px;margin:0 2px;border:1px solid rgba(0,0,0,.12);line-height:22px;color:#666;background:rgba(255, 255, 255, .2);border-radius:2px;cursor:pointer;}
+.we-pagination-num:hover,
+.we-pagination-btn:hover{background-color:rgba(164,164,164,.12);color:#656565;}
+
+.we-pagination-num{font-size:12px;padding:0 8px;}
+.we-pagination-num.cur{background-color:rgba(255,200,0,.5);border-color:#faab00;color:#3c3c3c;cursor:default;}
+
+.we-pagination-num--elli{background:rgba(0,0,0,0);border:none;font-size:12px;margin:0 3px 0 1px;cursor: default;}
+.we-pagination-num--elli:hover{background-color: rgba(0,0,0,0);}
+
+.we-pagination-btn{width:38px;}
+.we-pagination-btn:before,
+.we-pagination-btn:after{ content:"";width:6px;height:11px;display:inline-block;vertical-align:middle;margin-top:-2px;}
+.we-pagination-first:before,
+.we-pagination-last:after{ width:9px;}
+.we-pagination-prev:before{ margin-right:2px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALBAMAAACufOGlAAAAJFBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmbAN1C+AAAADHRSTlMA+3BfVX96Tufb2sP3g3uRAAAAKElEQVQI12NgYLBiYGAWYmBwVGBgEWNgKAxgYOhmANMgPkgcIs9gCQBQngOh0Sed6wAAAABJRU5ErkJggg==) no-repeat;}
+.we-pagination-next:after{margin-left:1px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALBAMAAACufOGlAAAAJFBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmbAN1C+AAAADHRSTlMA+3FfVX96Tufa18OsLQTVAAAAKElEQVQI12OYzMDAoGjAwMAkAmQkOjAwsIoDGTtANIgPFIfIL2ZgAABbpgQ33/eGUwAAAABJRU5ErkJggg==) no-repeat;}
+.we-pagination-first:before{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAALBAMAAABfd7ooAAAAIVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmYs5FxxAAAAC3RSTlMA/nxwX1Xh207nwyEzPYIAAAAvSURBVAjXY0hgYGApYBBgYHA0AJKswgxAMlABSHIIMQBJzgUMEDZUHKIGoh6iFwCltAUK6b1Q4QAAAABJRU5ErkJggg==) no-repeat;}
+.we-pagination-last:after{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAALBAMAAABfd7ooAAAAJFBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmbAN1C+AAAAC3RSTlMA+3xxX1Xh2U7nw6G5PtMAAAAsSURBVAjXYyhhYGBIYDB0YGDYwMAsCiIZFANAJJMEiGRYCWFDxGFqIOohegFVygqq1as7wAAAAABJRU5ErkJggg==) no-repeat;}
+
+.we-pagination-counter{margin:0 8px 0 29px;font-size:12px;text-align:left;}
+.we-pagination-input{width:48px;height:24px;margin:0 8px;background:#f9f9f9;border:1px solid #a4a4a4;text-align:center;font-size:12px;line-height:22px;color:#3c3c3c;border-radius:2px;padding:0 5px;}
+.we-pagination-confirm{background:rgba(0,0,0,0);border-color:#a4a4a4;color:#3c3c3c;min-width:50px;border-radius:13px;}
+
+/*.we-pagination-start, 
+.we-pagination-end{padding:0 10px;}
+.we-pagination-start{margin-right:5px;}
+.we-pagination-end{margin-left:5px;}*/
+
+.we-pagination-btn.disabled{background-color:rgba(164,164,164,.04);border-color:rgba(0,0,0,.1);cursor:default;}
+.we-pagination-btn.disabled::before,
+.we-pagination-btn.disabled::after{ opacity:.3;}
+
+/*大型翻页*/
+/*.we-pagination-big{}*/
+
+/*中型翻页*/
+/*水平对齐又we-align-xxx统一控制*/
+/*.we-pagination--helper{text-align:center;}*/
+.we-pagination--no-page-number .we-pagination-counter{ margin-left:2px;min-width:88px;}
+.we-pagination--no-page-number .we-pagination-input,
+.we-pagination--no-page-number .we-pagination-confirm{ border-radius:2px;border-color:rgba(0,0,0,.12);}
+.we-pagination--no-page-number .we-pagination-input{ margin-left:0;margin-right:7px;background:rgba(255, 255, 255, .2);}
+
+/*翻页-迷你*/
+.we-pagination--mini{display: inline-block;vertical-align: middle;}
+.we-pagination--mini .we-pagination-btn{min-width:0;}
+.we-pagination--mini .we-pagination-btn:before,
+.we-pagination--mini .we-pagination-btn:after{display: none;}
+.we-pagination--mini .we-pagination-prev,
+.we-pagination--mini .we-pagination-next{width:16px;height:16px;border-color:#B8B8B8;background:#FFFFFF;border-radius:16px;font-size:16px;line-height:14px;color:#B8B8B8;}
+.we-pagination--mini .we-pagination-prev:hover,
+.we-pagination--mini .we-pagination-next:hover{color:#B8B8B8;background:rgba(164,164,164,0.12);}
+.we-pagination--mini .we-pagination-counter{color:#3D3D3D;line-height:16px;margin:0 2px;}
+.we-pagination--mini .we-pagination-prev:before,
+.we-pagination--mini .we-pagination-next:after{display:none;}
+
+/*位置变化*/
+/*div[class^="we-pagination"].we-align-center{text-align:center;}
+div[class^="we-pagination"].we-align-right{text-align:right;}*/

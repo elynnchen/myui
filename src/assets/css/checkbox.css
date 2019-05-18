@@ -1,0 +1,23 @@
+/***********************
+模块名：复选框
+作者：baronxiong
+************************/
+
+.we-checkbox{ position:relative;display:inline-block;width:14px;height:14px;margin-right:8px;border-radius:2px;background:rgba(255, 255, 255, 0.2);border:1px solid rgba(0, 0, 0, 0.3);vertical-align:-2px;cursor:pointer;}
+.we-checkbox:hover{border-color:rgba(0, 0, 0, 0.8);transition:border-color .2s linear;}
+.we-checkbox:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAZ0lEQVQYlYXKoQ6CUABA0cMbBBPJz2AUZjOxsUHwcw1OCoUP4DNMVi2W5/b2xvSWW07RNq0fHXHFO/xBMzpUASsW1DuowYYp4IUzbhHnqMejxCWiU/whR1DiiSHBcvSFEnxHgTFF8AGmWRejkgrSAwAAAABJRU5ErkJggg==") no-repeat 1px 3px;}
+
+.we-checkbox:checked,
+.we-checkbox:focus{outline:0 none;}
+
+.we-checkbox:checked:after{opacity:1;}
+
+.we-checkbox:disabled{ background:rgba(0, 0, 0, 0.4);border-color:rgba(0,0,0,0.6);cursor:default;opacity:0.3;}
+
+
+/*不可用*/
+/*禁用态通过checkbox自身的disabled控制*/
+/*label[for^="we-checkbox"]{color:#333}
+label[for^="we-checkbox"].disabled{ color:#adadad}
+.disabled .we-checkbox{cursor:default;background:rgba(0, 0, 0, 0.4);border:1px solid rgba(0, 0, 0, 0.6); }
+.disabled .we-checkbox:hover{border:1px solid rgba(0, 0, 0, 0.6);}*/

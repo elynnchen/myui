@@ -9,14 +9,20 @@
 
 body{background:#fff;padding-left: calc(100vw - 100%);}
 html,
-body{min-height: 100%}
+body{min-height: 100%;margin: 0;
+    padding: 0;}
+ul,ol,li{list-style: none}
+a,a:hover,a:active,a:visited{text-decoration: none}
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal}
+*,*:after,*:before{box-sizing: border-box;}
 
 .wgdesign{width:100%;margin:0 auto;}
 .wgdesign-header,
 .wgdesign-aside{position:fixed;left: 0;top: 0;}
 .wgdesign-header{z-index:2;width: 100%;height: 74px;border-bottom: 2px solid #2f2f2f;background-color: #171717;}
 .wgdesign-aside{z-index:1;width:270px;height:100%;padding-top:74px;background:#171717 ;overflow: hidden;overflow-y:scroll;}
-
+.wgdesign-header h1{font-size: 24px; color: #fff;
+    padding-left: 30px;}
 /*滚动条*/
 .wgdesign-aside::-webkit-scrollbar{width:6px;background: transparent;}
 .wgdesign-aside::-webkit-scrollbar-thumb{border-radius:6px;}
@@ -35,7 +41,7 @@ body{min-height: 100%}
 .wgdesign-nav>li>a:hover:after{opacity: 1;}
 .wgdesign-nav>li.cur>a{background: rgba(254,196,0,.15);color:rgba(255,255,255,1);}
 .wgdesign-nav>li.cur>a:after{background-color: #fec400;opacity: 1;}
-
+.wgdesign-menu-main,.wgdesign-menu-sub{margin:0;padding:0}
 .wgdesign-menu-main>li{padding: 0 0 10px 0;}
 .wgdesign-menu-main>li>a{display: block;padding: 0 28px;margin-top: 10px;font-size: 15px;line-height: 48px;color: #808080;cursor: default;}
 

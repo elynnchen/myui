@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*******************
+模块名：all
+作者：任寒韬
+描述：引入所有组件
+********************/
+
+/*引入基本样式文件*/
+@import url('reset.css'); 
+@import url('base.css'); /*基础*/
+@import url('animation.css'); /*动画*/
+
+/*引入布局样式*/
+@import url('frame.css'); /*框架*/
+@import url('grid.css'); /*网格*/
+@import url('panel.css'); /*面板*/
+@import url('list.css'); /*列表*/
+
+/*引入基本元素样式*/
+@import url('button.css'); /*按钮*/
+@import url('icon.css'); /*图标*/
+@import url('avatar.css'); /*头像*/
+@import url('tag.css'); /*标签*/
+@import url('radio.css'); /*单选*/
+@import url('checkbox.css'); /*复选框*/
+@import url('input.css'); /*输入框*/
+@import url('input-number.css'); /*数字输入框*/
+@import url('textarea.css'); /*输入框*/
+@import url('select.css'); /*下拉菜单*/
+@import url('switch.css'); /*开关*/
+@import url('form.css'); /*表单*/
+
+/*引入基础组件样式*/
+@import url('carousel.css'); /*左右切换容器*/
+@import url('tabs.css'); /*选项卡*/
+@import url('breadcrumb.css'); /*面包屑*/
+@import url('alert.css'); /*反馈框*/
+@import url('popbox.css'); /*弹层*/
+@import url('pagination.css'); /*翻页*/
+@import url('search.css'); /*搜索框*/
+@import url('loading.css'); /*加载*/
+@import url('nav.css'); /*导航*/
+@import url('toast.css'); /*气泡反馈*/
+@import url('tips.css'); /*提示层*/
+@import url('notification.css'); /*通用页面提示*/
+@import url('menu.css'); /*通用页面提示*/
+@import url('top.css'); /*返回顶部*/
+
+/*其他业务组件*/
+@import url('poptips.css'); /*提示*/
+@import url('figure.css'); /*图文*/
+@import url('rate.css'); /*星标*/
+@import url('markscore.css'); /**/
+@import url('pricetag.css'); /*价格*/
+@import url('progress.css'); /*进度条*/
+@import url('tooltips.css'); /*承载内容的提示层*/
+@import url('table-data.css'); /*数据列表*/
+@import url('redtips.css'); /*红点提示*/
+

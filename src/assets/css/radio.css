@@ -1,0 +1,20 @@
+/***********************
+模块名：单选按钮
+作者：邓旭辉
+
+************************/
+
+.we-radio{position:relative;display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid rgba(0, 0, 0, 0.3);
+    vertical-align:-2px;margin-right:8px;cursor:pointer;background:rgba(255, 255, 255, 0.2);}
+.we-radio:hover{border-color:rgba(0, 0, 0, 0.8);transition:border-color .2s linear}
+.we-radio:after{content:"";position:absolute;left:3px;top:3px;width:6px;height:6px;border-radius:6px;background:#2f2d2f;opacity:0;}
+
+.we-radio:checked, 
+.we-radio:focus{outline:0 none;}
+
+.we-radio:checked:after{ opacity:1;}
+
+.we-radio:disabled{background:rgba(0, 0, 0, 0.4);border-color:rgba(0, 0, 0, 0.6);cursor:default;opacity:0.3;}
+
+
+/*disabled、checked状态通过本身的伪类来控制*/

@@ -1,0 +1,67 @@
+/***********************
+模块名：带功能承载tooltips
+作者：rexren（任寒韬）
+************************/
+
+/* 提示弹层-默认向下显示 */
+
+.we-tooltips{background:#FFFFFF;border:1px solid #b2b2b2;box-shadow:0 3px 7px -3px rgba(0, 0, 0, .2), 0 4px 8px -4px rgba(0, 0, 0, .2);top:0;left:0;line-height:1.5;z-index:100;color:#333;width:auto;border-radius:4px;font-size:12px;position:absolute;min-width:120px;text-align:left;padding:10px 15px 10px 15px;}
+.we-tooltips .we-scroll-y{overflow:auto;margin-right:-5px;}
+/* 提示弹层-默认向下显示箭头*/
+.we-tooltips:after{content:"";width:30px;height:12px;position:absolute;bottom:auto;top:-12px;left:9px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAMCAYAAAB1Lg0yAAABzklEQVQ4T62TMWjCUBCGL5pChQoqAeMm6NAuDi6SwaFb966WCEKtU+kiLXRwKC24lC5SC4K2rt27dXCQTIJLOyi4GSGoYCFDY1Iu5MkzjSaFPjheQt677+7/LwwAMADgAwA/RrVaPUgkEhWWZQ8ZhtmLx+OQTCYhEAiA16WqKgwGAxiNRmAYxpemae/D4bBSLpc/AGCJgVA6EE6KYLGQdrt9kUqlrrGAYDDoyl4sFiaw3+/f5HK5ewukWbsOAGYgFBcNRzAJU4VWq3UWDofvstksEwqFNsLn8zl0Oh1jNptdiaL4SLojMGs3AMAgYAKni6DhbLPZPIlEIg+CIPg5jvsFVxQFut3ucjqdnufz+RcAsHdpAq2La2CSjFZhDd5oNI45jnvKZDI70Wh0BZ9MJiBJ0reiKKeFQuF1AxTPE7Ap8aZFvhE4es7W6/Ujnuef0+n0Ls/zMB6PodfrqbIsi8Vi8c2CYrfEzzWgvTuvcNPzWq0mxGKxW5/Pt6/r+qcsy5elUkly8NQRSvvqNq3kl8OdTD4ZSOIddoi/Cr7j80pWp+TbpLaft08+fZeG0UPk6qNbx06DZwevJtZLsr90TOdzurdVWif5vBT472d+ACCipRMCyz2NAAAAAElFTkSuQmCC');-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);}
+/* 提示弹层-上左*/
+.we-tooltips.up.left{top:auto;bottom:0;}
+.we-tooltips.up.left:after{content:"";width:30px;height:12px;position:absolute;top:auto;bottom:-12px;left:9px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAMCAYAAAB1Lg0yAAABzklEQVQ4T62TMWjCUBCGL5pChQoqAeMm6NAuDi6SwaFb966WCEKtU+kiLXRwKC24lC5SC4K2rt27dXCQTIJLOyi4GSGoYCFDY1Iu5MkzjSaFPjheQt677+7/LwwAMADgAwA/RrVaPUgkEhWWZQ8ZhtmLx+OQTCYhEAiA16WqKgwGAxiNRmAYxpemae/D4bBSLpc/AGCJgVA6EE6KYLGQdrt9kUqlrrGAYDDoyl4sFiaw3+/f5HK5ewukWbsOAGYgFBcNRzAJU4VWq3UWDofvstksEwqFNsLn8zl0Oh1jNptdiaL4SLojMGs3AMAgYAKni6DhbLPZPIlEIg+CIPg5jvsFVxQFut3ucjqdnufz+RcAsHdpAq2La2CSjFZhDd5oNI45jnvKZDI70Wh0BZ9MJiBJ0reiKKeFQuF1AxTPE7Ap8aZFvhE4es7W6/Ujnuef0+n0Ls/zMB6PodfrqbIsi8Vi8c2CYrfEzzWgvTuvcNPzWq0mxGKxW5/Pt6/r+qcsy5elUkly8NQRSvvqNq3kl8OdTD4ZSOIddoi/Cr7j80pWp+TbpLaft08+fZeG0UPk6qNbx06DZwevJtZLsr90TOdzurdVWif5vBT472d+ACCipRMCyz2NAAAAAElFTkSuQmCC');-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg);}
+
+/* 提示弹层-上右*/
+.we-tooltips.up.right{top:auto;bottom:0;left:auto;right:0;}
+.we-tooltips.up.right:after{content:"";width:30px;height:12px;position:absolute;top:auto;bottom:-12px;left:auto;right:9px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAMCAYAAAB1Lg0yAAABzklEQVQ4T62TMWjCUBCGL5pChQoqAeMm6NAuDi6SwaFb966WCEKtU+kiLXRwKC24lC5SC4K2rt27dXCQTIJLOyi4GSGoYCFDY1Iu5MkzjSaFPjheQt677+7/LwwAMADgAwA/RrVaPUgkEhWWZQ8ZhtmLx+OQTCYhEAiA16WqKgwGAxiNRmAYxpemae/D4bBSLpc/AGCJgVA6EE6KYLGQdrt9kUqlrrGAYDDoyl4sFiaw3+/f5HK5ewukWbsOAGYgFBcNRzAJU4VWq3UWDofvstksEwqFNsLn8zl0Oh1jNptdiaL4SLojMGs3AMAgYAKni6DhbLPZPIlEIg+CIPg5jvsFVxQFut3ucjqdnufz+RcAsHdpAq2La2CSjFZhDd5oNI45jnvKZDI70Wh0BZ9MJiBJ0reiKKeFQuF1AxTPE7Ap8aZFvhE4es7W6/Ujnuef0+n0Ls/zMB6PodfrqbIsi8Vi8c2CYrfEzzWgvTuvcNPzWq0mxGKxW5/Pt6/r+qcsy5elUkly8NQRSvvqNq3kl8OdTD4ZSOIddoi/Cr7j80pWp+TbpLaft08+fZeG0UPk6qNbx06DZwevJtZLsr90TOdzurdVWif5vBT472d+ACCipRMCyz2NAAAAAElFTkSuQmCC');-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg);}
+
+/* 提示弹层-向上显示*/
+.we-tooltips.up{top:auto;	bottom:0;}
+.we-tooltips.up.center{left:50%;transform:translateX(-50%);-ms-transform:translateX(-50%);-moz-transform:translateX(-50%);}
+/* 提示弹层-向上显示箭头*/
+.we-tooltips.up:after{content:"";width:30px;height:12px;position:absolute;top:auto;bottom:-12px;left:9px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAMCAYAAAB1Lg0yAAABzklEQVQ4T62TMWjCUBCGL5pChQoqAeMm6NAuDi6SwaFb966WCEKtU+kiLXRwKC24lC5SC4K2rt27dXCQTIJLOyi4GSGoYCFDY1Iu5MkzjSaFPjheQt677+7/LwwAMADgAwA/RrVaPUgkEhWWZQ8ZhtmLx+OQTCYhEAiA16WqKgwGAxiNRmAYxpemae/D4bBSLpc/AGCJgVA6EE6KYLGQdrt9kUqlrrGAYDDoyl4sFiaw3+/f5HK5ewukWbsOAGYgFBcNRzAJU4VWq3UWDofvstksEwqFNsLn8zl0Oh1jNptdiaL4SLojMGs3AMAgYAKni6DhbLPZPIlEIg+CIPg5jvsFVxQFut3ucjqdnufz+RcAsHdpAq2La2CSjFZhDd5oNI45jnvKZDI70Wh0BZ9MJiBJ0reiKKeFQuF1AxTPE7Ap8aZFvhE4es7W6/Ujnuef0+n0Ls/zMB6PodfrqbIsi8Vi8c2CYrfEzzWgvTuvcNPzWq0mxGKxW5/Pt6/r+qcsy5elUkly8NQRSvvqNq3kl8OdTD4ZSOIddoi/Cr7j80pWp+TbpLaft08+fZeG0UPk6qNbx06DZwevJtZLsr90TOdzurdVWif5vBT472d+ACCipRMCyz2NAAAAAElFTkSuQmCC');-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg);}
+.we-tooltips.up.center:after{left:50%;margin-left:-15px;}
+
+/* 提示弹层-向右显示*/
+.we-tooltips.right{bottom:auto;top:0;left:100%;}
+/* 提示弹层-向右显示箭头*/
+.we-tooltips.right:after{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg);bottom:auto;top:13px;left:-21px;}
+.we-tooltips.right.center:after{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg);bottom:auto;top:50%;margin-top:-7px;left:-21px;}
+
+/*  提示弹层-向下显示 */
+.we-tooltips.down{top:0;left:0;bottom:auto;}
+/* 提示弹层-向下显示箭头*/
+.we-tooltips.down:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);bottom:auto;top:-12px;}
+.we-tooltips.down.center{top:130%;left:50%;right:auto;transform:translateX(-50%);-ms-transform:translateX(-50%);-moz-transform:translateX(-50%);}
+.we-tooltips.down.center:after{left:50%;margin-left:-15px;}
+.we-tooltips.down.left{bottom:auto;top:130%;}
+.we-tooltips.down.left:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);bottom:auto;top:-12px;left:9px;}
+.we-tooltips.down.right{bottom:auto;top:130%;left:auto;right:0;}
+.we-tooltips.down.right:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);bottom:auto;top:-12px;left:auto;right:9px;}
+
+/* 提示弹层-向左显示 */
+.we-tooltips.left{left:0;right:auto;bottom:auto;}
+/* 提示弹层-向左显示箭头*/
+.we-tooltips.left:after{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);bottom:auto;top:13px;left:auto;right:-21px;}
+/* 提示弹层-左中S*/
+.we-tooltips.left.center{left:auto;right:100%;top:50%;transform:translateY(-50%);-ms-transform:translateY(-50%);-moz-transform:translateY(-50%);}
+.we-tooltips.left.center:after{top:50%;margin-top:-7px;}
+/* 提示弹层-左中S*/
+.we-tooltips.right.center{right:auto;left:100%;top:50%;transform:translateY(-50%);-ms-transform:translateY(-50%);-moz-transform:translateY(-50%);}
+.we-tooltips.right.center:after{top:50%;margin-top:-7px;}
+
+/* 提示弹层-显示隐藏交互*/
+.hover .we-tooltips{opacity:0;transition:all .2s ease-out;transform:translate3d(0%, 20%, 0);z-index:-1;}
+.hover:hover .we-tooltips{opacity:1;transform:translate3d(0%, 0, 0);z-index:1;}
+.hover .we-tooltips.right{transform:translate3d(10%, 0%, 0);}
+.hover:hover .we-tooltips.right{transform:translate3d(0%, 0, 0);}
+.hover .we-tooltips.up{transform:translate3d(0%, -20%, 0);}
+.hover:hover .we-tooltips.up{transform:translate3d(0%, 0, 0);}
+.hover .we-tooltips.left{transform:translate3d(-10%, 0%, 0);}
+.hover:hover .we-tooltips.left{transform:translate3d(0%, 0, 0);}
+
+/* 无箭头tips S */
+.we-tooltips.noarrow{min-width:0;padding:5px 7px 5px 5px;}
+.we-tooltips.noarrow:before, .we-tooltips.noarrow:after{display:none;}

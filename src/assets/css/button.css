@@ -1,0 +1,53 @@
+/***********************
+模块名：按钮
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+
+/* 按钮-基础 */
+.we-button{display:inline-block;line-height:24px;padding:0 20px;font-size:12px;color:#333;border-style:solid;border-width:1px;border-radius:26px;text-align:center;cursor:pointer;}
+.we-button:hover{color:#333;}
+
+/* 按钮默认样式 */
+.we-button--default{border-color:rgba(164,164,164,1)}
+.we-button--default:hover{background-color:rgba(164,164,164,0.12);}
+/* 按钮默认样式 */
+.we-button--primary{border-color:#faab00;background:rgba(255,200,0,0.5);}
+.we-button--primary:hover{background:#ffc800;}
+
+/*颜色风格*/
+/*.we-button--color-xxx*/
+
+
+
+.we-button--color-a{border-color:#ffc800;background-color:#ffc800;}
+.we-button--color-a:hover{border-color:#e6b400;background-color:#e6b400;}
+/*.we-button--color-b.disabled{border-color:#eee;background-color: #eee;color: #adadad}*/
+
+.we-button--color-b{border-color:#00cb43;background-color:#00cb43;color:#fff;}
+.we-button--color-b:hover{background-color:#00b33b;color:#fff;}
+/*.we-button--color-c.disabled{border-color:#eee;background-color: #eee;color: #adadad}*/
+
+.we-button--color-c{border-color:#3b9cff;background-color:#3b9cff;color:#fff;}
+.we-button--color-c:hover{background-color:#358de6;color:#fff;}
+/*.we-button--color-d.disabled{border-color:#eee;background-color: #eee;color: #adadad}*/
+
+.we-button--color-d{border-color:#ff8d13;background-color:#ff8d13;color:#fff;}
+.we-button--color-d:hover{background-color:#e67e10;color:#fff;}
+/*.we-button--color-e.disabled{border-color:#eee;background-color: #eee;color: #adadad}*/
+
+/*禁用*/
+.we-button.disabled{color:#adadad;border-color:#eee;background-color: #eee;cursor:default;}
+.we-button--default.disabled{border-color:rgba(164,164,164,0.3);background-color: rgba(0,0,0,0);}
+.we-button--primary.disabled{border-color:#f2e2c0;background:#f2ecd8;}
+
+.we-button--color-e,
+.we-button--color-e:hover,
+.we-button--color-e.disabled{border-color:rgba(0,0,0,0.7);background-color:rgba(0,0,0,0.7);color:#adadad;}
+
+/*尺寸*/
+.we-button--size-m{line-height: 30px;}
+.we-button--size-l{line-height: 34px;}
+.we-button--size-full{line-height:34px;width: 100%}
+
+

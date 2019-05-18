@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors baronxiong
+ * @date    2018-04-25 16:03:13
+ * @version 下拉菜单,注意跟下拉框不同
+ */
+
+.we-menu{position: relative;display: inline-block;height: 100%;}
+.we-menu-toggle{position:relative;padding-right:20px;/*font-size: 13px;line-height:24px;color: #3c3c3c;*/text-align: center;cursor: pointer;color: inherit;}
+.we-menu-toggle:after{content:"";position:absolute;top:50%;right:5px;width:8px;height:4px;margin-top:-2px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAS0lEQVQImWXMwQ2AIABD0Sf7GCZxAEfQxHV0D06uwJG4CzcSL3DRXpr2N53iHE9s/rrKU/aAA+kDU+8FNKzIHeae2xhAxYK7ex1XL+3lDsLeHSs4AAAAAElFTkSuQmCC") no-repeat;background-size:8px 4px;}
+
+.we-menu-itemlist{position: absolute;left: 50%;top: 100%;margin-top: 4px;z-index: 20;-webkit-transform:translateX(-50%);border: 1px solid #b2b2b2;background: #fff;border-radius: 3px;box-shadow: 0 3px 7px -3px rgba(0, 0, 0, .2), 0 4px 8px -4px rgba(0, 0, 0, .2);}
+.we-menu-itemlist>li:hover{background-color:#f0f0f0;-webkit-transition:background-color ease-in-out .3s}
+.we-menu-item{display: block;height: 30px;padding: 0 10px;color: #333;font-size: 13px;line-height: 30px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;cursor: pointer;}

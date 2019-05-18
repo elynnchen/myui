@@ -1,0 +1,18 @@
+/***********************
+模块名：网格
+作者：baronxiong
+说明：应用在页面框架布局上，用来对we-panel进行定位，不推荐用在组件、模块内部元素的布局
+************************/
+
+/*行*/
+.we-grid-row{margin-left:-10px;margin-right: -10px;}
+.we-grid-row:after{content: "";display: block;width: 0;height: 0;clear: both;}
+/*列*/
+.we-grid-col{float:left;width:100%;padding:0 10px;}
+.we-grid-col--24{width:100%;}
+.we-grid-col--12{width: 50%;}
+.we-grid-col--8{width: 33.33333%;}
+.we-grid-col--6{width: 25%;}
+.we-grid-col--4{width:16.66667%;}
+
+

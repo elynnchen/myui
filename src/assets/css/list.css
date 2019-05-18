@@ -1,0 +1,24 @@
+/***********************
+模块名：列表
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+
+.we-list{margin:0 -16px -16px 0;}
+.we-list:after{content:"";display:block;width:0;height:0;clear:both;}
+/*宽度100%的场景可以用在竖排*/
+.we-list>li{float:left;width:100%;padding:0 16px 16px 0;-webkit-transition:linear 0.3s;}
+/*一列*/
+/*默认宽度100%,不需要单独声明*/
+/*.we-list--1>li{width:100%;}*/
+
+/*两列*/
+.we-list--2>li{width:50%;}
+/*三列*/
+.we-list--3>li{width:33.33%;}
+/*四列*/
+.we-list--4>li{width:25%;}
+/*五列*/
+.we-list--5>li{width:20%;}
+/*六列*/
+.we-list--6>li{width:16.666%;}

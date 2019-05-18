@@ -1,0 +1,69 @@
+/***********************
+模块名：平台通用动画
+作者：elynn
+************************/
+
+
+/*渐隐渐显动画*/
+
+.we-fade-in {
+	animation: we-fade-in 0.3s linear forwards;
+}
+
+@keyframes we-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/*渐隐渐退动画*/
+
+.we-fade-out {
+	animation: we-fadeOut 0.3s linear forwards;
+}
+
+@keyframes we-fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+
+/*向上渐隐渐退动画*/
+
+.we-fadeup-in {
+	animation: we-fadeup-in 0.3s linear forwards;
+}
+
+@keyframes we-fadeup-in {
+	from {
+		transform: translateY(-20px);
+		opacity: 0
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+.we-fadeup-out {
+	animation: we-fadeup-out 0.3s linear forwards;
+}
+
+@keyframes we-fadeup-out {
+	from {
+		transform: translateY(0px);
+		opacity: 1
+	}
+	to {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,22 @@
+/***********************
+模块名：输入框&&文本域
+作者：邓旭辉
+************************/
+
+/* 文本输入域 */
+.we-textarea{width:100%;line-height:1.5;overflow-y:scroll;padding:3px 8px;border:1px solid rgba(0,0,0,0.3);border-radius:2px;font-size:13px;color:#333;background:rgba(255,255,255,0.2);}
+
+/*Placehold样式*/
+.we-textarea::-webkit-input-placeholder{color:rgba(60,60,60,.4);}
+
+/*获得焦点*/
+.we-textarea:focus,
+.we-textarea.focus{outline:0;border-color:rgba(0,0,0,0.8);background:rgba(255,255,255,0.6);}
+
+/*禁用状态*/
+.we-textarea:disabled,
+.we-textarea.disabled{border-color:rgba(0,0,0,0.1);background-color:rgba(0,0,0,0.04);color:#adadad;}
+
+/*出错状态*/
+.we-textarea.error{border-color:#f64949;background:#fff5f5;color:#333;}
+

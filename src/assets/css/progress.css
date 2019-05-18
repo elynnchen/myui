@@ -1,0 +1,39 @@
+/***********************
+模块名：进度条
+作者：任寒韬
+************************/
+
+/* 进度条 */
+.we-progress-bar{height:10px;}
+.we-progress-cur{position:absolute;left:0;top:0;}
+.we-progress-bar,
+.we-progress-cur {display:block;position:relative;border-radius:10px;}
+.we-progress-bar:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:#ebebeb;border-radius:10px;}
+.we-progress-cur {height:10px;border-radius:10px;background:#FFC800;-webkit-transition:linear 0.3s;}
+.we-progress.error .we-progress-speed,
+.we-progress.error .we-progress-info{color:#ff6d01;}
+
+/* 进度条组合 */
+.we-progress{font-size:13px;position:relative;}
+
+/*带操作*/
+.we-progress.progress--oprate{padding-top:4px;}
+.we-progress.progress--oprate .we-progress-bar{margin-right:80px;}
+.we-progress.progress--oprate .we-progress-oprate{position:absolute;z-index:2;right:0;top:-4px;}
+.we-progress-btn{display:inline-block;opacity:0.7}
+.we-progress-btn:hover{opacity:1;}
+.we-progress-btn.pause{background-image:url(../images/icon-pause.png);width:27px;height:26px;}
+.we-progress-btn.closed{background-image:url(../images/icon-cancle.png);width:27px;height:26px;}
+.we-progress-btn.start{background-image:url(../images/icon-start-video.png);width:27px;height:26px;}
+.we-progress-retry{line-height:23px;color:#6b6b6b;}
+.we-progress-retry:hover{color:#faab00;}
+.we-progress-info{margin-top:5px;}
+.we-progress-speed{float:left;width:41%;}
+.we-progress-capacity{float:left;width:45%;text-align:center;}
+.we-progress-value{float:right;width:14%;text-align:right;}
+
+/*等级进度条*/
+.we-progress--lv{width:88px;height:10px;border-color:#EAEAEA;background:#ebebeb;position:relative;border-radius:9px;margin:0 auto 5px;font-weight:bold;}
+.we-progress--lv .we-lv-cur{text-align:center;position:absolute;left:-36px;top:-5px;color:#333;}
+.we-progress--lv .we-progress-cur{-webkit-transition:linear 0.3s;background:#FFC800;position:absolute;left:0px;top:0px;}
+.we-progress--lv .we-lv-all{position:absolute;right:-36px;top:-5px;color:#858585;}

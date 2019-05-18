@@ -1,0 +1,15 @@
+/***********************
+模块名：开关
+作者：rexren（任寒韬）
+************************/
+
+/*.we-switch{width:40px;height:20px;line-height:20px;display:inline-block;position:relative;}*/
+.we-switch{position:relative;display:inline-block;width:40px;height:20px;border:0 none;-webkit-appearance:none;outline:0 none;cursor:pointer;}
+.we-switch:before,
+.we-switch:after{content: "";display: block;}
+
+.we-switch:before{width: 40px;height:20px;border:1px solid #dfdfdf;background-color:#fdfdfd;border-radius:20px;-webkit-box-shadow:#dfdfdf 0 0 0 0 inset;box-shadow:#dfdfdf 0 0 0 0 inset;-webkit-transition:border-color .4s,-webkit-box-shadow .4s;transition:border-color .4s,box-shadow .4s;-webkit-background-clip:content-box;background-clip:content-box}
+.we-switch:checked:before{border-color:#FFC800;background-color:#FFC800;-webkit-box-shadow:#FFC800 0 0 0 16px inset;box-shadow:#FFC800 0 0 0 16px inset;transition:border-color .4s,box-shadow .4s,background-color 1.2s;-webkit-transition:border-color .4s,-webkit-box-shadow .4s,background-color 1.2s;background-color:#FFC800}
+
+.we-switch:after {position:absolute;top:50%;left:0;width:18px;height:18px;margin-top:-9px;border-radius:100%;background-color:#FFFFFF;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.4);box-shadow:0 1px 3px rgba(0,0,0,.4);-webkit-transition:left .2s;transition:left .2s;}
+.we-switch:checked:after {left:21px}
