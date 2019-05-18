@@ -15,10 +15,6 @@
 .we-button--primary{border-color:#faab00;background:rgba(255,200,0,0.5);}
 .we-button--primary:hover{background:#ffc800;}
 
-/*颜色风格*/
-/*.we-button--color-xxx*/
-
-
 
 .we-button--color-a{border-color:#ffc800;background-color:#ffc800;}
 .we-button--color-a:hover{border-color:#e6b400;background-color:#e6b400;}

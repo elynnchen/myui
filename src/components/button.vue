@@ -1,11 +1,11 @@
 <template>
     <div class="weui-demo">
-        <h1 class="weui-demo-tit">we-avatar</h1>
+        <h1 class="weui-demo-tit">按钮组件</h1>
         <div class="weui-demo-item">
             <h2 class="weui-demo-item-hd">默认按钮</h2>
             <div class="weui-demo-item-bd">
                 <div class="box">
-                    <we-button class="we-button"></we-button>
+                    <we-button >这是我传进去的按钮</we-button>
                 </div>
 
             </div>
@@ -31,6 +31,7 @@
 
         }
     }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

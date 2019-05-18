@@ -3,8 +3,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false;
 import router from "./routes"
-import '../src/assets/css/index.css'
-
+import './assets/css/index.css'
+import './assets/iconfont/iconfont.js'
+import './assets/iconfont/iconfont.css'
 
 new Vue({
   router,

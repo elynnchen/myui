@@ -1,6 +1,9 @@
 <template>
-    <button>
-        hi
+    <button class="we-button">
+        <slot></slot>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-loding"></use>
+        </svg>
     </button>
 </template>
 
@@ -10,7 +13,10 @@
         components:{
         }
     }
+
 </script>
+
+
 <style>
 
 
