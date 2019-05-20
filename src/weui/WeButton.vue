@@ -1,21 +1,29 @@
 <template>
-    <button class="we-button" :class="`icon-${iconPosition}`">
-        <svg v-if="iconName" class="svg-icon" aria-hidden="true">
-            <use v-bind:xlink:href="`#${iconName}`"></use>
-        </svg>
+    <button class="we-button" :class='classes'>
+        <we-icon v-if="iconName" :name="iconName"></we-icon>
         <span class="we-button-cont"><slot></slot></span>
     </button>
 </template>
 
 <script>
+    import  WeIcon from './WeSvgicon'
     export default {
         name: 'WeButton',
+        components:{WeIcon},
         //props:['iconName','iconPosition'] --这是数据写法，还可以用对像写法
         props:{
             iconName:{},
+            btnStyle:{
+                type: String,
+                default: ''
+            },
+            btnSize:{
+                type: String,
+                default: ''
+            },
             iconPosition:{
                 type: String,
-                default:'left',
+                default:'',
                 validator(value) {
                     if(value!=='left'&& value!=='right'){
                         return false
@@ -23,10 +31,17 @@
                         return true
                     }
                 }
+            }
+        },
+        computed:{
+            classes(){
+                return [
+                    this.btnStyle === ''? '':`we-button--${this.btnStyle}`,
+                    this.iconPosition ==='' ? '':`icon-${this.iconPosition}`,
+                    this.btnSize ==='' ? '':`we-button--size-${this.btnSize}`,
+                ]
 
             }
-
-
         }
 
 
