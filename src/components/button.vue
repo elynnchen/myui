@@ -38,5 +38,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+    .box button{vertical-align: top; margin-right: 10px;}
 
 </style>
