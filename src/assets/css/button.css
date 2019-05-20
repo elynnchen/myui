@@ -5,7 +5,7 @@
 ************************/
 
 /* 按钮-基础 */
-.we-button{display:inline-block;line-height:24px;padding:0 20px;font-size:12px;color:#333;border-style:solid;border-width:1px;border-radius:26px;text-align:center;cursor:pointer;}
+.we-button{line-height:24px;padding:0 20px;font-size:12px;color:#333;border-style:solid;border-width:1px;border-radius:26px;text-align:center;cursor:pointer;}
 .we-button:hover{color:#333;}
 
 /* 按钮默认样式 */
@@ -45,5 +45,7 @@
 .we-button--size-m{line-height: 30px;}
 .we-button--size-l{line-height: 34px;}
 .we-button--size-full{line-height:34px;width: 100%}
+
+
 
 

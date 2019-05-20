@@ -5,7 +5,10 @@
             <h2 class="weui-demo-item-hd">默认按钮</h2>
             <div class="weui-demo-item-bd">
                 <div class="box">
-                    <we-button >这是我传进去的按钮</we-button>
+                    <we-button >按钮</we-button>
+                    <we-button icon-name="icon-loding" icon-position="left" >按钮</we-button>
+                    <we-button icon-name="icon-loding" icon-position="right" >按钮</we-button>
+
                 </div>
 
             </div>
