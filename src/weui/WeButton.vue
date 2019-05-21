@@ -1,5 +1,5 @@
 <template>
-    <button class="we-button" :class='classes'>
+    <button class="we-button" :class='classes' @click="$emit('click')">
         <we-icon v-if="iconName" :name="iconName"></we-icon>
         <span class="we-button-cont"><slot></slot></span>
     </button>
@@ -42,6 +42,9 @@
                 ]
 
             }
+        },
+        methods:{
+
         }
 
 

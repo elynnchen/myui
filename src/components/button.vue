@@ -7,7 +7,10 @@
                 <div class="box">
                     <we-button btn-style="primary"  btn-size="m">按钮</we-button>
                     <we-button icon-name="icon-loding" icon-position="left" >按钮</we-button>
+
                     <we-button icon-name="icon-loding" icon-position="right" >按钮</we-button>
+                    <we-button btn-style="primary"  btn-size="m" @click="handleclick">算数+1</we-button>
+                <p>{{message}}</p>
                 </div>
 
             </div>
@@ -31,6 +34,16 @@
         components:{
             WeButton
 
+        },
+        data(){
+           return{
+               message:0}
+        },
+        methods:{
+            handleclick(){
+                this.message++
+
+            }
         }
     }
 
