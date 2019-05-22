@@ -6,11 +6,12 @@
             <div class="weui-demo-item-bd">
                 <div class="box">
                     <we-button btn-style="primary"  btn-size="m">按钮</we-button>
-                    <we-button icon-name="icon-loding" icon-position="left" >按钮</we-button>
+                    <we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
 
-                    <we-button icon-name="icon-loding" icon-position="right" >按钮</we-button>
+                    <we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
                     <we-button btn-style="primary"  btn-size="m" @click="handleclick">算数+1</we-button>
                 <p>{{message}}</p>
+                    <div id="test" style="height:100px;"></div>
                 </div>
 
             </div>

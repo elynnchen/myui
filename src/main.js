@@ -6,11 +6,29 @@ import router from "./routes"
 import './assets/css/index.css'
 import './assets/iconfont/iconfont.js'
 import './assets/iconfont/iconfont.css'
+import WeButton from "./weui/WeButton";
 
 new Vue({
   router,
   render: h => h(App),
 }).$mount('#app');
+
+//单元测试
+import chai from 'chai'
+const expect= chai.expect;
+{
+ const Constructor=Vue.extend(WeButton);
+  const button=new Constructor({
+    propsData:{
+      btnStyle: 'primary',
+      iconName:'icon-loding'
+    }
+  });
+  button.$mount('#test');
+  let useElement=button.$el.querySelector('use');
+  console.log(useElement)
+  expect(useElement.getAttribute('xlink:href')).to.eq('#icon-loding')//我期望xlink:href最后得到的值是#icon-loding
+}
 
 
 

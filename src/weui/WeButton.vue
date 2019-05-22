@@ -23,14 +23,7 @@
             },
             iconPosition:{
                 type: String,
-                default:'',
-                validator(value) {
-                    if(value!=='left'&& value!=='right'){
-                        return false
-                    } else {
-                        return true
-                    }
-                }
+                default:''
             }
         },
         computed:{
