@@ -18,17 +18,34 @@ import chai from 'chai'
 const expect= chai.expect;
 {
  const Constructor=Vue.extend(WeButton);
-  const button=new Constructor({
+  const vm=new Constructor({
     propsData:{
       btnStyle: 'primary',
       iconName:'icon-loding'
     }
   });
-  button.$mount('#test');
-  let useElement=button.$el.querySelector('use');
-  console.log(useElement)
-  expect(useElement.getAttribute('xlink:href')).to.eq('#icon-loding')//我期望xlink:href最后得到的值是#icon-loding
+  vm.$mount();//挂载
+  let useElement=vm.$el.querySelector('use');
+  console.log(useElement);
+  expect(useElement.getAttribute('xlink:href')).to.eq('#icon-loding');//我期望xlink:href最后得到的值是#icon-loding
+    vm.$el.remove();//清除战场 清内存
+    vm.$destroy()
 }
+{
+    const Constructor=Vue.extend(WeButton);
+    const webutton=new Constructor({
+        propsData:{
+            iconName:'icon-loding'
+        }
+    });
+    webutton.$mount();//挂载
+    webutton.$on('click',function () {
+        console.log(1)//期望这个函数被执行
 
+    });
+    let button=webutton.$el;
+    webutton.$el.remove();//清除战场 清内存
+    webutton.$destroy()
+}
 
 

@@ -1,5 +1,5 @@
 <template>
-    <button class="we-button" :class='classes' @click="$emit('click')">
+    <button class="we-button" :class='classes'  @click="$emit('click')">
         <we-icon v-if="iconName" :name="iconName"></we-icon>
         <span class="we-button-cont"><slot></slot></span>
     </button>
@@ -17,6 +17,10 @@
                 type: String,
                 default: ''
             },
+            disabled:{
+                type:String,
+                default:''
+            },
             btnSize:{
                 type: String,
                 default: ''
@@ -32,6 +36,7 @@
                     this.btnStyle === ''? '':`we-button--${this.btnStyle}`,
                     this.iconPosition ==='' ? '':`icon-${this.iconPosition}`,
                     this.btnSize ==='' ? '':`we-button--size-${this.btnSize}`,
+                    this.disabled ==='' ? '':`${this.disabled}`,
                 ]
 
             }

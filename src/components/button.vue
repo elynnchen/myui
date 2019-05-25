@@ -6,6 +6,8 @@
             <div class="weui-demo-item-bd">
                 <div class="box">
                     <we-button btn-style="primary"  btn-size="m">按钮</we-button>
+                    <we-button btn-style="primary" disabled="disabled"  btn-size="m">禁用按钮</we-button>
+                    <we-button disabled="disabled"  btn-size="m">禁用按钮</we-button>
                     <we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
 
                     <we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
