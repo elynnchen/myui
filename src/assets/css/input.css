@@ -1,28 +1,53 @@
-/***********************
-模块名：输入框&&文本域
-作者：邓旭辉
-************************/
+@charset "UTF-8";
+.we-input, .we-input-original {
+    display: inline-block
+}
 
-/* input输入框 */
-.we-input{display:inline-block;width:100%;height:24px;padding:3px 9px;font-size:13px;color:#333;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;border:1px solid rgba(0,0,0,0.3);border-radius:2px;background:rgba(255,255,255,0.2);}
+.we-input-original {
+    width: 100%;
+    height: 24px;
+    padding: 3px 8px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .2)
+}
 
-/*Placehold样式*/
-.we-input::-webkit-input-placeholder{color:rgba(60,60,60,.4);}
+.we-input-original::-webkit-input-placeholder {
+    color: rgba(60, 60, 60, .4);
+    font-size: 13px;
+    line-height: 16px
+}
 
-/*输入框-长度定制*/
-/*.we-input--flex{width:100%;}*/
-/*.we-input--xlarge{width:400px;}
-.we-input--large{width:270px;}
-.we-input--middle{width:200px;}
-.we-input--small{width:100px;}*/
+.we-input-original:focus, .we-input.focus .we-input-original {
+    outline: 0;
+    border-color: rgba(0, 0, 0, .8);
+    background: rgba(255, 255, 255, .6)
+}
 
-/*获得焦点状态*/
-.we-input:focus,
-.we-input.focus{outline:0;border-color:rgba(0,0,0,0.8);background:rgba(255,255,255,0.6);}
+.we-input-original:disabled, .we-input.disabled .we-input-original {
+    border-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .04);
+    color: #adadad
+}
 
-/*禁用状态*/
-.we-input:disabled,
-.we-input.disabled{border-color:rgba(0,0,0,0.1);background-color:rgba(0,0,0,0.04);color:#adadad;}
+.we-input.error .we-input-original {
+    border-color: #f64949;
+    background: #fff5f5;
+    color: #333
+}
 
-/*出错状态*/
-.we-input.error{border-color:#f64949;background:#fff5f5;color:#333;}
+.we-input--textarea .we-input-original {
+    height: auto;
+    overflow-y: scroll;
+    white-space: normal
+}
+
+.we-input--flex {
+    display: block
+}

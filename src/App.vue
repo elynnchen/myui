@@ -16,6 +16,9 @@
             <li>
               <router-link to="/input">input</router-link>
             </li>
+            <li>
+              <router-link to="/inputGroup">inputGroup</router-link>
+            </li>
           </ul>
 
         </li>

@@ -8,9 +8,9 @@
             <h2 class="weui-demo-item-hd">默认按钮</h2>
             <div class="weui-demo-item-bd">
                 <div class="box">
-                    <we-input value="张三" placeholder="请输入文字"  ></we-input>
-                    <we-input placeholder="请输入文字" ></we-input>
-                    <we-input value="张三" placeholder="请输入文字" disabled ></we-input>
+                   <we-input-group value="张三" errortips="内容不少于两个字" class="error">
+
+                   </we-input-group>
                 </div>
 
             </div>
@@ -32,12 +32,11 @@
 </template>
 
 <script>
-    import WeInput from '../weui/WeInput'
+    import WeInputGroup from '../weui/WeInputGroup'
     export default {
         name: '',
         components:{
-            WeInput
-
+            WeInputGroup
         },
         data(){
             return{
