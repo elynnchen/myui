@@ -3,14 +3,17 @@
 
 
     <div class="weui-demo">
-        <h1 class="weui-demo-tit">按钮组件</h1>
+        <h1 class="weui-demo-tit">Input校验</h1>
         <div class="weui-demo-item">
-            <h2 class="weui-demo-item-hd">默认按钮</h2>
+            <h2 class="weui-demo-item-hd">有错误提示则显示错误样式</h2>
             <div class="weui-demo-item-bd">
                 <div class="box">
-                   <we-input-group value="张三" errortips="内容不少于两个字" class="error">
-
-                   </we-input-group>
+                   <we-input-group value="张三" error="内容不少于两个字"
+                   @change="inputChange">
+                   </we-input-group><br/><br>
+                    <we-input-group value="张三" error=""
+                                    @change="inputChange">
+                    </we-input-group>
                 </div>
 
             </div>
@@ -44,6 +47,9 @@
             }
         },
         methods:{
+            inputChange(e){
+                console.log(e.target.value)
+            }
 
         }
     }

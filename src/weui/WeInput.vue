@@ -1,5 +1,11 @@
 <template>
-        <input :value="value" :disabled="disabled" class="we-input" size="16" type="text" :placeholder="placeholder">
+        <input :value="value"
+               :disabled="disabled"
+               class="we-input-original"
+               size="16"
+               :type="type"
+               @input="$emit('input',$event.target.value)"
+               :placeholder="placeholder">
 </template>
 
 <script>
@@ -16,7 +22,9 @@
                         type:Boolean,
                         default:false
 
-                }
+                },
+                type:{},
+                message:{}
         }
 
 
