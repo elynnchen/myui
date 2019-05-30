@@ -1,49 +1,48 @@
 <template>
     <div class="weui-demo">
         <h1 class="weui-demo-tit">按钮组件</h1>
-        <div class="weui-demo-item">
-            <h2 class="weui-demo-item-hd">默认按钮</h2>
-            <div class="weui-demo-item-bd">
-                <div class="box">
-                    <we-button btn-style="primary"  btn-size="m">按钮</we-button>
-                    <we-button btn-style="primary" disabled="disabled"  btn-size="m">禁用按钮</we-button>
-                    <we-button disabled="disabled"  btn-size="m">禁用按钮</we-button>
-                    <we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
-
-                    <we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
-                    <we-button btn-style="primary"  btn-size="m" @click="handleclick">算数+1</we-button>
+        <temp-box title="表单验证">
+            <template>
+                <we-button btn-style="primary" btn-size="m">按钮</we-button>
+                <we-button btn-style="primary" disabled="disabled" btn-size="m">禁用按钮</we-button>
+                <we-button disabled="disabled" btn-size="m">禁用按钮</we-button>
+                <we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
+                <we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
+                <we-button btn-style="primary" btn-size="m" @click="handleclick">算数+1</we-button>
                 <p>{{message}}</p>
-                    <div id="test" style="height:100px;"></div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="weui-demo-item">
-            <h2 class="weui-demo-item-hd">圆形头像</h2>
-            <div class="weui-demo-item-bd">
-
-            </div>
-        </div>
-
-
+                <div id="test" style="height:100px;"></div>
+            </template>
+            <div slot="codediv"><per-code>{{code}}</per-code></div>
+        </temp-box>
     </div>
 </template>
 
 <script>
     import WeButton from '../weui/WeButton'
+    import PerCode from './code'
+    import TempBox from './TempBox'
+    import WeButtonCode from '!!raw-loader!./../weui/WeButton.vue';//将文件转化成字符串,注这里的是已经为文本文件，因此用插值表达示表示
     export default {
         name: '',
-        components:{
-            WeButton
-
+        components: {
+            WeButton,PerCode,TempBox
         },
-        data(){
-           return{
-               message:0}
+        data() {
+            return {
+                test: WeButtonCode,
+                message: 0,
+                code: `
+<we-button btn-style="primary"  btn-size="m">按钮</we-button>
+<we-button btn-style="primary" disabled="disabled"  btn-size="m">禁用按钮</we-button>
+<we-button disabled="disabled"  btn-size="m">禁用按钮</we-button>
+<we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
+<we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
+<we-button btn-style="primary"  btn-size="m" @click="handleclick">算数+1</we-button>
+               `,
+            }
         },
-        methods:{
-            handleclick(){
+        methods: {
+            handleclick() {
                 this.message++
 
             }
@@ -54,6 +53,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    .box button{vertical-align: top; margin-right: 10px;}
+
 
 </style>

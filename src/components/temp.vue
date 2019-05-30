@@ -2,13 +2,9 @@
 
     <div class="weui-demo">
         <h1 class="weui-demo-tit">Input校验</h1>
-        <temp-box title="表单验证">
+        <temp-box title="">
             <template>
-                <we-input-group value="张三" error="内容不少于两个字"
-                                @change="inputChange">
-                </we-input-group><br/><br>
-                <we-input-group value="张三" error="" @change="inputChange">
-                </we-input-group>
+
             </template>
             <div slot="codediv"><per-code>{{code}}</per-code></div>
         </temp-box>
@@ -29,17 +25,13 @@
         data(){
             return{
                 code: `
-<we-input-group value="张三" error="内容不少于两个字" @change="inputChange"></we-input-group>
-<we-input-group value="张三" error="" @change="inputChange"></we-input-group>
+
 
                `
 
             }
         },
         methods:{
-            inputChange(e){
-                console.log(e.target.value)
-            }
 
         }
     }

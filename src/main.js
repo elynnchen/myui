@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import VueHighlightJS from 'vue-highlightjs'
+// Tell Vue.js to use vue-highlightjs
+Vue.use(VueHighlightJS);
+import 'highlight.js/styles/xcode.css'
+
 Vue.config.productionTip = false;
 import router from "./routes"
 import './assets/css/index.css'
