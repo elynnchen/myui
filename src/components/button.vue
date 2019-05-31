@@ -1,16 +1,35 @@
 <template>
     <div class="weui-demo">
         <h1 class="weui-demo-tit">按钮组件</h1>
-        <temp-box title="表单验证">
+        <temp-box title="按钮类形">
             <template>
-                <we-button btn-style="primary" btn-size="m">按钮</we-button>
-                <we-button btn-style="primary" disabled="disabled" btn-size="m">禁用按钮</we-button>
-                <we-button disabled="disabled" btn-size="m">禁用按钮</we-button>
-                <we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
-                <we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
-                <we-button btn-style="primary" btn-size="m" @click="handleclick">算数+1</we-button>
-                <p>{{message}}</p>
-                <div id="test" style="height:100px;"></div>
+                <div class="demo-p">
+                    <h3>按钮基础样式</h3>
+                    <we-button btn-style="primary" >主要按钮</we-button>
+                    <we-button btn-style="primary" disabled="disabled" >禁用主要按钮</we-button>
+                    <we-button btn-style="default">默认按钮</we-button>
+                    <we-button disabled="disabled" >禁用默认按钮</we-button>
+                </div>
+
+                <div class="demo-p">
+                    <h3>按钮大小</h3>
+                    <we-button btn-style="default" btn-size="s">小号按钮</we-button>
+                    <we-button btn-style="default" btn-size="m">中号按钮</we-button>
+                    <we-button btn-style="default" btn-size="l">大号按钮</we-button>
+
+                </div>
+
+                <div class="demo-p">
+                    <h3>按钮加Icon</h3>
+                    <we-button icon-name="icon-loding" icon-position="left">icon在左边</we-button>
+                    <we-button icon-name="icon-loding" icon-position="right">icon在右边</we-button>
+                </div>
+                <div class="demo-p">
+                    <h3>按钮事件</h3>
+                    <we-button btn-style="primary" btn-size="m" @click="handleclick">算数+1</we-button>
+                    <p>{{message}}</p>
+                </div>
+
             </template>
             <div slot="codediv"><per-code>{{code}}</per-code></div>
         </temp-box>
@@ -32,11 +51,18 @@
                 test: WeButtonCode,
                 message: 0,
                 code: `
-<we-button btn-style="primary"  btn-size="m">按钮</we-button>
-<we-button btn-style="primary" disabled="disabled"  btn-size="m">禁用按钮</we-button>
-<we-button disabled="disabled"  btn-size="m">禁用按钮</we-button>
-<we-button icon-name="icon-loding" icon-position="left">按钮</we-button>
-<we-button icon-name="icon-loding" icon-position="right">按钮</we-button>
+<we-button btn-style="primary" >主要按钮</we-button>
+<we-button btn-style="primary" disabled="disabled" >禁用主要按钮</we-button>
+<we-button btn-style="default">默认按钮</we-button>
+<we-button disabled="disabled" >禁用默认按钮</we-button>
+
+<we-button btn-style="default" btn-size="s">小号按钮</we-button>
+<we-button btn-style="default" btn-size="m">中号按钮</we-button>
+<we-button btn-style="default" btn-size="l">大号按钮</we-button>
+
+<we-button icon-name="icon-loding" icon-position="left">icon在左边</we-button>
+<we-button icon-name="icon-loding" icon-position="right">icon在右边</we-button>
+
 <we-button btn-style="primary"  btn-size="m" @click="handleclick">算数+1</we-button>
                `,
             }
@@ -54,5 +80,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-
+.demo-p{ margin-bottom: 20px;}
+.demo-p h3{padding:10px 0;}
 </style>
