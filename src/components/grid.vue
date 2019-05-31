@@ -1,7 +1,34 @@
 <template>
     <div class="weui-demo">
         <h1 class="weui-demo-tit">栅格</h1>
-        <temp-box title="栅格无缝隙">
+        <temp-box title="栅格无缝隙" >
+            <template>
+                <we-row >
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row >
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row >
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                </we-row>
+                <we-row >
+                    <we-col span="2"><div class="col-cont"></div></we-col>
+                    <we-col span="22"><div class="col-cont"></div></we-col>
+                </we-row>
+            </template>
+            <div slot="codediv"><per-code>{{code}}</per-code></div>
+        </temp-box>
+
+        <temp-box title="有空隙">
             <template>
                 <we-row  gutter="12">
                     <we-col span="12"><div class="col-cont"></div></we-col>
@@ -28,26 +55,20 @@
             <div slot="codediv"><per-code>{{code}}</per-code></div>
         </temp-box>
 
-        <temp-box title="有间隔">
+        <temp-box title="偏移">
             <template>
-                <we-row  gutter="12">
-                    <we-col span="12"><div class="col-cont"></div></we-col>
-                    <we-col span="12"><div class="col-cont"></div></we-col>
+                <we-row >
+                    <we-col span="10"><div class="col-cont"></div></we-col>
+                    <we-col span="8" offset="6"><div class="col-cont"></div></we-col>
                 </we-row>
 
-                <we-row gutter="12">
-                    <we-col span="8"><div class="col-cont"></div></we-col>
-                    <we-col span="8"><div class="col-cont"></div></we-col>
-                    <we-col span="8"><div class="col-cont"></div></we-col>
-                </we-row>
-
-                <we-row gutter="12">
+                <we-row >
                     <we-col span="6"><div class="col-cont"></div></we-col>
                     <we-col span="6"><div class="col-cont"></div></we-col>
                     <we-col span="6"><div class="col-cont"></div></we-col>
                     <we-col span="6"><div class="col-cont"></div></we-col>
                 </we-row>
-                <we-row gutter="12">
+                <we-row >
                     <we-col span="2"><div class="col-cont"></div></we-col>
                     <we-col span="22"><div class="col-cont"></div></we-col>
                 </we-row>
@@ -69,7 +90,6 @@
         },
         data() {
             return {
-                test: WeButtonCode,
                 message: 0,
                 code: `
 
@@ -87,8 +107,8 @@
 <style>
     .we-col{margin-bottom: 10px;}
     .col-cont{height:30px; width:100%;display: block; }
-    .we-col:nth-child(4n+1){ background:#a2ccf8;}
-    .we-col:nth-child(4n+2){ background: rgba(162, 204, 248, 0.8);}
-    .we-col:nth-child(4n+3){ background: rgba(162, 204, 248, 0.6);}
-    .we-col:nth-child(4n+4){ background: rgba(162, 204, 248, 0.4);}
+    .we-col:nth-child(4n+1) .col-cont{ background:#a2ccf8;}
+    .we-col:nth-child(4n+2) .col-cont{ background: rgba(162, 204, 248, 0.8);}
+    .we-col:nth-child(4n+3) .col-cont{ background: rgba(162, 204, 248, 0.6);}
+    .we-col:nth-child(4n+4) .col-cont{ background: rgba(162, 204, 248, 0.4);}
 </style>

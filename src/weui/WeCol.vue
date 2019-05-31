@@ -1,5 +1,6 @@
 <template>
-    <div class="we-col" :class="[`col-${span}`]">
+    <div class="we-col" :class="[span && `col-${span}`,offset && `offset-${offset}`]"
+    :style="{paddingLeft:gutter/2+'px',paddingRight:gutter/2+'px'}">
         <slot></slot>
     </div>
 </template>
@@ -9,7 +10,22 @@
     export default {
         name: 'WeCol',
         props:{
-            span:{Number,String}
+            span:{
+                type:[Number,String]
+            },
+            offset:{
+                type:[Number,String]
+            }
+
+        },
+        data(){
+            return{gutter:0}
+        },
+        created(){
+            console.log('col created')
+        },
+        mounted(){
+            console.log('col mounted')
         }
     }
 
@@ -25,7 +41,12 @@
                 width:($n/24)*100%;
             }
         }
-
+        $offset-prefix:offset-;
+        @for $n from 1 through 24{//循环生成col-n
+            &.#{$offset-prefix}#{$n}{
+                margin-left:($n/24)*100%;
+            }
+        }
 
     }
 
