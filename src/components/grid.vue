@@ -25,7 +25,7 @@
                     <we-col span="22"><div class="col-cont"></div></we-col>
                 </we-row>
             </template>
-            <div slot="codediv"><per-code>{{code}}</per-code></div>
+            <div slot="codediv"><per-code>{{code1}}</per-code></div>
         </temp-box>
 
         <temp-box title="有空隙">
@@ -52,7 +52,7 @@
                     <we-col span="22"><div class="col-cont"></div></we-col>
                 </we-row>
             </template>
-            <div slot="codediv"><per-code>{{code}}</per-code></div>
+            <div slot="codediv"><per-code>{{code2}}</per-code></div>
         </temp-box>
 
         <temp-box title="偏移">
@@ -73,7 +73,7 @@
                     <we-col span="22"><div class="col-cont"></div></we-col>
                 </we-row>
             </template>
-            <div slot="codediv"><per-code>{{code}}</per-code></div>
+            <div slot="codediv"><per-code>{{code3}}</per-code></div>
         </temp-box>
     </div>
 </template>
@@ -83,6 +83,7 @@
     import WeCol from '../weui/WeCol'
     import PerCode from './code'
     import TempBox from './TempBox'
+
     export default {
         name: '',
         components: {
@@ -90,16 +91,82 @@
         },
         data() {
             return {
-                message: 0,
-                code: `
+                code1:`
+              <we-row >
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                </we-row>
 
-               `,
+                <we-row >
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row >
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                    <we-col ><div class="col-cont"></div></we-col>
+                </we-row>
+                <we-row >
+                    <we-col span="2"><div class="col-cont"></div></we-col>
+                    <we-col span="22"><div class="col-cont"></div></we-col>
+                </we-row>
+                    `
+                ,
+
+                code2: `
+                 <we-row  gutter="12">
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                    <we-col span="12"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row gutter="12">
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                    <we-col span="8"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row gutter="12">
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                </we-row>
+                <we-row gutter="12">
+                    <we-col span="2"><div class="col-cont"></div></we-col>
+                    <we-col span="22"><div class="col-cont"></div></we-col>
+                </we-row>`,
+                code3: `
+                 <we-row >
+                    <we-col span="10"><div class="col-cont"></div></we-col>
+                    <we-col span="8" offset="6"><div class="col-cont"></div></we-col>
+                </we-row>
+
+                <we-row >
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                    <we-col span="6"><div class="col-cont"></div></we-col>
+                </we-row>
+                <we-row >
+                    <we-col span="2"><div class="col-cont"></div></we-col>
+                    <we-col span="22"><div class="col-cont"></div></we-col>
+                </we-row>
+                        `,
             }
+
         },
+        created(){
+
+        },
+
         methods: {
 
         }
     }
+
 
 </script>
 
