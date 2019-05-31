@@ -12,15 +12,15 @@
         <li>
           <a href="#">基础组件</a>
           <ul class="wgdesign-menu-sub">
-            <li><router-link to="/button">按钮</router-link></li>
+            <li><router-link to="/button">button-按钮</router-link></li>
             <li>
-              <router-link to="/input">input</router-link>
+              <router-link to="/input">input-输入框</router-link>
             </li>
             <li>
-              <router-link to="/inputGroup">inputGroup</router-link>
+              <router-link to="/inputGroup">inputGroup-输入提示</router-link>
             </li>
             <li>
-              <router-link to="/grid">grid</router-link>
+              <router-link to="/grid">grid-栅格布局</router-link>
             </li>
           </ul>
 

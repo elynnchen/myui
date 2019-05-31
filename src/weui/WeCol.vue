@@ -53,7 +53,8 @@
 <style lang="scss">
     $class-sprefix:col-;
     .we-col{
-        width: 50%;
+        flex: 0 0 auto;
+        float: left;
         @for $n from 1 through 24{//循环生成col-n
             &.#{$class-sprefix}#{$n}{
                 width:($n/24)*100%;

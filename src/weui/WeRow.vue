@@ -1,5 +1,5 @@
 <template>
-   <div class="we-row" :style="rowStyle">
+   <div class="we-row" :style="rowStyle" :class="classes">
       <slot></slot>
    </div>
 </template>
@@ -11,11 +11,19 @@
         props:{
             gutter:{
                 type:[Number,String]
+            },
+            align:String,
+            validator(value) {
+                return['left','right','center'].includes(value)
             }
         },
         computed:{
             rowStyle(){
                 return{marginLeft: -this.gutter/2+'px',marginRight:-this.gutter/2+'px'}
+            },
+            classes(){
+                let {align}=this;
+                return[align && `align-${align}`]
             }
 
         },
@@ -27,16 +35,24 @@
 
 
     }
-    var div=document.createElement('div');//created
-    var childDiv=document.createElement('div');//child created
-    div.appendChild(childDiv);//child mounted
-    document.body.appendChild(div);//mounted
+
 
 
 </script>
 
 
-<style>
-    .we-row{ display: flex}
+<style lang="scss">
+    .we-row{
+        display: flex;
+        &.align-left{ justify-content: flex-start;
+        }
+
+        &.align-right{ justify-content: flex-end;
+            }
+        &.align-center{ justify-content: center;
+
+        }
+
+    }
 
 </style>
