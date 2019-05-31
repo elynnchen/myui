@@ -1,5 +1,5 @@
 <template>
-   <div class="we-row" :style="{marginLeft: -gutter/2+'px',marginRight:-gutter/2+'px'}">
+   <div class="we-row" :style="rowStyle">
       <slot></slot>
    </div>
 </template>
@@ -14,14 +14,17 @@
             }
         },
         computed:{
+            rowStyle(){
+                return{marginLeft: -this.gutter/2+'px',marginRight:-this.gutter/2+'px'}
+            }
 
         },
         created(){
-            console.log('row created')
+
         },
         mounted(){
             console.log(this.$children);
-            this.$children.forEach((vm)=>{//把grutter传到每个子组件
+            this.$children.forEach((vm)=>{
                 vm.gutter=this.gutter
             })
         }
