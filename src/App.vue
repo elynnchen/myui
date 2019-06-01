@@ -17,10 +17,10 @@
               <router-link to="/input">input-输入框</router-link>
             </li>
             <li>
-              <router-link to="/inputGroup">inputGroup-输入提示</router-link>
+              <router-link to="/grid">grid-栅格布局</router-link>
             </li>
             <li>
-              <router-link to="/grid">grid-栅格布局</router-link>
+
             </li>
           </ul>
 

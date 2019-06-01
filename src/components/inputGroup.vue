@@ -9,33 +9,28 @@
                <p>{{getStr}}</p>
                 <button type="button" class="we-button" v-on:click='btnClick' >验证</button>
             </template>
-            <div slot="codediv">  <pre v-highlightjs=" percode "><code class="html"></code></pre></div>
+            <div slot="codediv">  <pre v-highlightjs="code"><code class="html"></code></pre></div>
         </temp-box>
-
     </div>
 
 </template>
 
 <script>
-    import PerCode from './code'
+
     import TempBox from './TempBox'
     import WeInputGroup from '../weui/WeInputGroup'
-    import WeInputGroupCode from '!!raw-loader!./../weui/WeInputGroup.vue';//将文件转化成字符串,注这里的是已经为文本文件，因此用插值表达示表示
+    import WeInputGroupCode from '!!raw-loader!./../components/inputGroup.vue';//将文件转化成字符串,注这里的是已经为文本文件，因此用插值表达示表示
     export default {
         name: '',
         components:{
-            WeInputGroup,PerCode,TempBox,WeInputGroupCode
+            WeInputGroup,TempBox
         },
         data(){
             return{
                 err:"",
                 str: '',
-                percode:WeInputGroupCode,
-                getStr:'null',
-                code: `
-                 <we-input-group placeholder="输入不少于4个字" :error="err" v-model="str" @change="inputChange"></we-input-group>
-
-              `
+                code:WeInputGroupCode,
+                getStr:'null'
             }
         },
         computed:{
