@@ -20,7 +20,7 @@
               <router-link to="/grid">grid-栅格布局</router-link>
             </li>
             <li>
-
+              <router-link to="/toast">Toast-系统提示</router-link>
             </li>
           </ul>
 

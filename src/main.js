@@ -12,11 +12,16 @@ import './assets/css/index.css'
 import './assets/iconfont/iconfont.js'
 import './assets/iconfont/iconfont.css'
 import WeButton from "./weui/WeButton";
+//使用自己写的插件
+import plugin from './weui/Plugin.js'
+Vue.use(plugin);
 
 new Vue({
   router,
   render: h => h(App),
+
 }).$mount('#app');
+
 
 //单元测试
 import chai from 'chai'
