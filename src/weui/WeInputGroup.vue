@@ -3,12 +3,14 @@
                 <!-- 如果你给我一个error,我就有个error类 :class="{'error':error}"-->
                 <!-- we-input S -->
                 <div class="we-input" >
-                        <input :value="value" :disabled="disabled"
+                        <input :disabled="disabled"
                                class="we-input-original"
                                size="16"
                                type="text"
                                :placeholder="placeholder"
-                               @change="$emit('change',$event)"
+                               :value="value"
+                               @input="$emit('input',$event.target.value)"
+                               @change="$emit('change',$event.target.value)"
                         >
                 </div>
                 <!-- we-input E -->
@@ -27,7 +29,7 @@
             components:{WeIcon},
         props:{
                 value:{
-                   type:String
+                   type:[String,Number]
                 },
                 placeholder:{
                     type: String
@@ -40,7 +42,11 @@
                 error:{
                         type:String
                 }
-        }
+        },
+         methods:{
+
+            }
+
 
 
     }

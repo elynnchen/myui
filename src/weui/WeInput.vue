@@ -1,9 +1,10 @@
 <template>
-        <input :value="value"
+        <input
                :disabled="disabled"
                class="we-input-original"
                size="16"
                :type="type"
+               :value="value"
                @input="$emit('input',$event.target.value)"
                :placeholder="placeholder">
 </template>

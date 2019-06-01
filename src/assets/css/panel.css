@@ -27,9 +27,9 @@
 
 
 /*无背景*/
-/*.we-panel--a{background:none;}
-.we-panel--a .we-panel-hd{border:none;}
-.we-panel--a .we-panel-tit{padding-left:0;}*/
+/*.we-panel--getString{background:none;}
+.we-panel--getString .we-panel-hd{border:none;}
+.we-panel--getString .we-panel-tit{padding-left:0;}*/
 
 /*有背景*/
 .we-panel--bg{background:#fff;}

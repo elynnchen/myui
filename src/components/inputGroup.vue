@@ -4,13 +4,12 @@
         <h1 class="weui-demo-tit">Input校验</h1>
         <temp-box title="表单验证">
             <template>
-                <we-input-group value="张三" error="内容不少于两个字"
-                                @change="inputChange">
+                <we-input-group placeholder="输入不少于4个字" :error="err" v-model="str" @change="inputChange">
                 </we-input-group><br/><br>
-                <we-input-group value="张三" error="" @change="inputChange">
-                </we-input-group>
+               <p>{{getStr}}</p>
+                <button type="button" class="we-button" v-on:click='btnClick' >验证</button>
             </template>
-            <div slot="codediv"><per-code>{{code}}</per-code></div>
+            <div slot="codediv">  <pre v-highlightjs=" percode "><code class="html"></code></pre></div>
         </temp-box>
 
     </div>
@@ -21,25 +20,53 @@
     import PerCode from './code'
     import TempBox from './TempBox'
     import WeInputGroup from '../weui/WeInputGroup'
+    import WeInputGroupCode from '!!raw-loader!./../weui/WeInputGroup.vue';//将文件转化成字符串,注这里的是已经为文本文件，因此用插值表达示表示
     export default {
         name: '',
         components:{
-            WeInputGroup,PerCode,TempBox
+            WeInputGroup,PerCode,TempBox,WeInputGroupCode
         },
         data(){
             return{
+                err:"",
+                str: '',
+                percode:WeInputGroupCode,
+                getStr:'null',
                 code: `
-<we-input-group value="张三" error="内容不少于两个字" @change="inputChange"></we-input-group>
-<we-input-group value="张三" error="" @change="inputChange"></we-input-group>
+                 <we-input-group placeholder="输入不少于4个字" :error="err" v-model="str" @change="inputChange"></we-input-group>
 
-               `
-
+              `
             }
         },
+        computed:{
+
+        },
+
         methods:{
-            inputChange(e){
-                console.log(e.target.value)
+            btnClick: function() {
+                console.log(this.str);
+                this.getStr = this.str.toUpperCase();
+                console.log(this.getStr);
+                if(this.str.length<=4){
+                    this.err="内容不少于四个字"
+                }
+                else {
+                    this.err=""
+                }
+            },
+            inputChange:function () {
+
+                if(this.str.length<4){
+                    this.err="内容不少于四个字"
+                }
+                else {
+                    this.err=""
+                }
             }
+
+        },
+        mounted(){
+
 
         }
     }

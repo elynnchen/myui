@@ -98,53 +98,53 @@ img.error{opacity: 0}
 
 .tx-tit{ color:#3c3c3c}
 .tx-thin{color: rgba(60, 60, 60, 0.59);}
-.tx-thin--a{color: rgba(60, 60, 60, 0.3);}
+.tx-thin--getString{color: rgba(60, 60, 60, 0.3);}
 .tx-em{color:#faab00;}
 .tx-error{color:#FF5C2B;}
-.tx-em--a{color:#ff5400;}
+.tx-em--getString{color:#ff5400;}
 .tx-em--b{color:#04c743;}*/
 
 /*特殊链接*/
 
 /*深灰无下划线*/
 /*.link-a1,
-a.link-a1{color:#333;text-decoration:none;}
+getString.link-a1{color:#333;text-decoration:none;}
 .link-a1,
-a.link-a1:hover{color:#f69c00;text-decoration:none;}
+getString.link-a1:hover{color:#f69c00;text-decoration:none;}
 .link-a1.disabled,
-a.link-a1.disabled,
+getString.link-a1.disabled,
 .link-a1.disabled:hover,
-a.link-a1.disabled:hover{color:rgba(51,51,51,0.3);}*/
+getString.link-a1.disabled:hover{color:rgba(51,51,51,0.3);}*/
 
 /*深灰有下划线*/
 /*.link-a2,
-a.link-a2{color:#333;text-decoration:underline;}
+getString.link-a2{color:#333;text-decoration:underline;}
 .link-a2,
-a.link-a2:hover{color:#f69c00;text-decoration:underline;}
+getString.link-a2:hover{color:#f69c00;text-decoration:underline;}
 .link-a2.disabled,
-a.link-a2.disabled,
+getString.link-a2.disabled,
 .link-a2.disabled:hover,
-a.link-a2.disabled:hover{color:rgba(51,51,51,0.3);text-decoration:underline;}
+getString.link-a2.disabled:hover{color:rgba(51,51,51,0.3);text-decoration:underline;}
 */
 /*浅灰无下划线*/
 /*.link-b1,
-a.link-b1{color:#858585;text-decoration:none;}
+getString.link-b1{color:#858585;text-decoration:none;}
 .link-b1,
-a.link-b1:hover{color:#6b6b6b;text-decoration:none;}
+getString.link-b1:hover{color:#6b6b6b;text-decoration:none;}
 .link-b1.disabled,
-a.link-b1.disabled,
+getString.link-b1.disabled,
 .link-b1.disabled:hover,
-a.link-b1.disabled:hover{color:rgba(51,51,51,0.3);}*/
+getString.link-b1.disabled:hover{color:rgba(51,51,51,0.3);}*/
 
 /*浅灰有下划线*/
 /*.link-b2,
-a.link-b2{color:#858585;text-decoration:underline;}
+getString.link-b2{color:#858585;text-decoration:underline;}
 .link-b2,
-a.link-b2:hover{color:#6b6b6b;text-decoration:underline;}
+getString.link-b2:hover{color:#6b6b6b;text-decoration:underline;}
 .link-b2.disabled,
-a.link-b2.disabled,
+getString.link-b2.disabled,
 .link-b2.disabled:hover,
-a.link-b2.disabled:hover{color:rgba(51,51,51,0.3);}
+getString.link-b2.disabled:hover{color:rgba(51,51,51,0.3);}
 */
 
 
