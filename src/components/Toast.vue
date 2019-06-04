@@ -4,8 +4,7 @@
         <h1 class="weui-demo-tit">Toast</h1>
         <temp-box title="">
             <template>
-                <we-toast></we-toast>
-                <we-button btn-style="default" btn-size="s" @click="showToast">知道了</we-button>
+                <we-button btn-style="default" btn-size="s" @click="showToast">弹出Toast</we-button>
 
             </template>
             <div slot="codediv"><per-code>{{code}}</per-code></div>
@@ -23,7 +22,7 @@
     export default {
         name: '',
         components:{
-            WeToast,PerCode,TempBox,WeButton
+            PerCode,TempBox,WeButton
         },
         data(){
             return{
@@ -35,12 +34,25 @@
         },
         methods:{
             showToast(){
-                this.$toast('fdsafda')
+                this.$toast(
+                    '我是message我是message',
+                    {
+                    autoClose:true,
+                    autoCloseDelay:7,
+                    closeButton:{
+                        callback(){
+                            console.log('用户说知道了')
+                        }
+                    }
+
+
+                })
 
             }
 
         },
         created(){
+            console.log(this.autoClose)
 
 
         }

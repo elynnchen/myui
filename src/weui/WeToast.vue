@@ -10,7 +10,8 @@
             <we-button btn-style="default" btn-size="s">知道了</we-button>
          </div>
       </div>
-      <a class="we-toast-close" href="javascript:void(0);">×</a>
+      <slot></slot>
+      <a class="we-toast-close" @click="onClickClose" v-if="closeButton">×</a>
    </div>
 </template>
 
@@ -23,6 +24,49 @@ import WeButton  from './WeButton'
     export default {
        name:'WeToast',
        components: {WeButton},
+       props:{
+          autoClose:{
+             type:Boolean,
+             default:true
+          },
+          autoCloseDelay:{
+             type:Number,
+             default: 3
+          },
+          closeButton:{
+             type:Object,
+             default:()=>{
+                return{
+                   callback:undefined
+                }
+
+             }
+          }
+       },
+
+       mounted() {
+          if(this.autoClose){
+             setTimeout(()=>{
+                this.close()
+             },this.autoCloseDelay*1000)
+          }
+       },
+       methods:{
+          close(){
+             this.$el.remove();//将元素从页面中移除
+             this.$destroy();
+          },
+          onClickClose(){
+             this.close();
+             if(this.closeButton && typeof this.closeButton.callback==='function' ){
+                this.closeButton.callback()//判断用户是否有closeButton
+             }
+
+          }
+
+       }
+
+
     }
 
 
