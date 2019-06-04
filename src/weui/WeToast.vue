@@ -1,5 +1,5 @@
 <template>
-   <div class="we-toast ">
+   <div class="we-toast" :class="toastClasses" >
       <div class="we-toast-bd">
          <span class="we-toast-icon confirm-ico-warn-s"></span>
          <h3 class="we-toast-tit">反馈提示文案</h3>
@@ -41,6 +41,14 @@ import WeButton  from './WeButton'
                 }
 
              }
+          },
+          position:{
+             type:String,
+             default:'center',
+             validator(value){
+                return['top','center'].indexOf(value)
+             }
+
           }
        },
 
@@ -64,6 +72,11 @@ import WeButton  from './WeButton'
 
           }
 
+       },
+       computed:{
+          toastClasses(){
+             return{[`position-${this.position}`]:true}
+          }
        }
 
 
@@ -75,5 +88,21 @@ import WeButton  from './WeButton'
 
 
 <style lang="scss">
+   .we-toast {
+      &.position-top{
+         position: fixed;
+         top:0;
+         left:50%;
+         transform: translateX(-50%);
+      }
+      &.position-center{
+         position: fixed;
+         top:50%;
+         left:50%;
+         transform: translate(-50%);
+
+      }
+
+   }
 
 </style>

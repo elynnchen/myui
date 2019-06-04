@@ -37,8 +37,8 @@
                 this.$toast(
                     '我是message我是message',
                     {
-                    autoClose:true,
-                    autoCloseDelay:7,
+                    autoClose:false,
+                    autoCloseDelay:0,
                     closeButton:{
                         callback(){
                             console.log('用户说知道了')
