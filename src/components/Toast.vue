@@ -2,11 +2,19 @@
 
     <div class="weui-demo">
         <h1 class="weui-demo-tit">Toast</h1>
-        <temp-box title="">
+        <temp-box title="Toast类型">
             <template>
-                <we-button btn-style="default" btn-size="s" @click="showToast">弹出Toast</we-button>
+                <we-toast toastType="info" >我是提示信息</we-toast>
+                <we-toast toastType="warn" toastDetails="我是辅助信息">我是警告提示信息</we-toast>
+                <we-toast toast-type="success">我是成功提示信息</we-toast>
 
             </template>
+            <div slot="codediv"><per-code>{{code1}}</per-code></div>
+        </temp-box>
+        <temp-box title="">
+            <we-button btn-style="default" btn-size="s" @click="showToastAutoClose">自动关闭</we-button>
+            <we-button btn-style="default" btn-size="s" @click="showToastOnTop">在上面弹出Toast</we-button>
+            <we-button btn-style="default" btn-size="s" @click="showToastOnCenter">在中间弹出</we-button>
             <div slot="codediv"><per-code>{{code}}</per-code></div>
         </temp-box>
 
@@ -19,23 +27,49 @@
     import PerCode from './code'
     import TempBox from './TempBox'
     import WeToast from '../weui/WeToast'
+    import WeToastCode from '!!raw-loader!./../components/Toast.vue';
     export default {
         name: '',
         components:{
+            WeToast,
             PerCode,TempBox,WeButton
         },
         data(){
             return{
-                code: `
-
+                code:WeToastCode,
+                code1: `
+ <we-toast toastType="info" >我是提示信息</we-toast>
+<we-toast toastType="warn" toastDetails="我是辅助信息">我是警告提示信息</we-toast>
+<we-toast toast-type="success">我是成功提示信息</we-toast>
 
                `
             }
         },
+        mounted(){
+
+
+        },
         methods:{
-            showToast(){
+            showToastAutoClose(){
                 this.$toast(
-                    '我是message我是message',
+                    '我是出错信息',//message值为空
+                    {
+                        autoClose:true,
+                        autoCloseDelay:3,
+                        closeButton:{
+                            callback(){
+                                console.log('用户说知道了')
+                            }
+                        },
+                        position:'center'
+
+
+                    })
+
+            },
+            showToastOnTop(){
+                this.$toast(
+                    '我是出错信息',//message值为空
                     {
                     autoClose:false,
                     autoCloseDelay:0,
@@ -43,16 +77,34 @@
                         callback(){
                             console.log('用户说知道了')
                         }
-                    }
+                    },
+                        position:'top'
 
 
                 })
 
-            }
+            },
+            showToastOnCenter(){
+                this.$toast(
+                    '我是出错信息',//message值为空
+                    {
+                        autoClose:false,
+                        autoCloseDelay:0,
+                        closeButton:{
+                            callback(){
+                                console.log('用户说知道了')
+                            }
+                        },
+                        position:'center'
+
+
+                    })
+
+            },
 
         },
         created(){
-            console.log(this.autoClose)
+
 
 
         }
