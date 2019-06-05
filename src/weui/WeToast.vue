@@ -30,7 +30,7 @@ import WeButton  from './WeButton'
        components: {WeButton,WeIcon},
        data(){
           return{
-             showCloseButton:true
+             showCloseButton:true,
 
           }
        },
@@ -80,11 +80,13 @@ import WeButton  from './WeButton'
 
        mounted() {
           if(this.autoClose){
+             this.showCloseButton=false;
              setTimeout(()=>{
                 this.close()
              },this.autoCloseDelay*1000)
           }
        },
+
        methods:{
           close(){
              this.$el.remove();//将元素从页面中移除
@@ -99,15 +101,7 @@ import WeButton  from './WeButton'
           }
 
        },
-       watch:{
-          //如需对属性值做修改需要用Watch,而不能用Computed
-          showCloseButton() {
-             if (this.toastType=='info') {
-                this.showCloseButton = false;
-             }
-             return this.showCloseButton
-          }
-       },
+
        computed:{
           iconName() {
              let toastIconName = "";
@@ -123,9 +117,6 @@ import WeButton  from './WeButton'
              }
              return toastIconName;
           },
-
-
-
           toastClasses(){
              return[
                 this.position === ''? '':`position-${this.position}`,
