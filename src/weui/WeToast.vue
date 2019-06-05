@@ -13,7 +13,7 @@
          </div>
       </div>
 
-      <a class="we-toast-close" @click="onClickClose" v-if="closeButton">×</a>
+      <a class="we-toast-close" @click="onClickClose" v-if="showCloseButton">×</a>
    </div>
 </template>
 
@@ -30,6 +30,8 @@ import WeButton  from './WeButton'
        components: {WeButton,WeIcon},
        data(){
           return{
+             showCloseButton:true
+
           }
        },
        props:{
@@ -97,41 +99,43 @@ import WeButton  from './WeButton'
           }
 
        },
+       watch:{
+          //如需对属性值做修改需要用Watch,而不能用Computed
+          showCloseButton() {
+             if (this.toastType=='info') {
+                this.showCloseButton = false;
+             }
+             return this.showCloseButton
+          }
+       },
        computed:{
           iconName() {
-             let toasIconName = "";
+             let toastIconName = "";
              switch (this.toastType) {
                 case "warn":{
-                   toasIconName = "icon-prompt_fill";
+                   toastIconName = "icon-prompt_fill";
                    break;
                 }
                 case "success":{
-                   toasIconName = "icon-success_fill";
+                   toastIconName = "icon-success_fill";
                    break;
                 }
-                case "info":{
-                  this.closeButton=false;
-                   break;
-                }
-
              }
-             return toasIconName;
+             return toastIconName;
           },
+
+
+
           toastClasses(){
              return[
                 this.position === ''? '':`position-${this.position}`,
                 this.animate === ''? '': this.animate,
                 this.toastType,
                 ]
-
-
           }
        }
 
-
     }
-
-
 
 </script>
 

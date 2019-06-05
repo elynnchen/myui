@@ -4,7 +4,6 @@
     <list default="true" id="e0060f84-f3a4-4fd2-bf9d-a366c07d1f4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weui/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/weui/Plugin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/weui/WeToast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/weui/WeToast.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,45 +16,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.33855024">
+    <splitter split-orientation="horizontal" split-proportion="0.6301483">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/weui/WeButton.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="35" column="75" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="75" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/weui/WeInput.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="11" column="53" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/weui/WeToast.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
-                  <folding>
-                    <element signature="e#725#758#0" expanded="true" />
-                    <element signature="e#938#1035#0" />
-                  </folding>
+                <state relative-caret-position="427">
+                  <caret line="35" column="75" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="75" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/weui/WeToast.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#725#758#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/input.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="122">
-                  <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="33" />
+                <state relative-caret-position="1512">
+                  <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
                   <folding>
                     <element signature="e#1654#1691#0" expanded="true" />
                   </folding>
@@ -66,8 +55,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/grid.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1913">
-                  <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="68" />
+                <state relative-caret-position="2016">
+                  <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="68" />
                 </state>
               </provider>
             </entry>
@@ -75,7 +64,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/weui/Plugin.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
+                <state relative-caret-position="483">
                   <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
@@ -84,7 +73,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/button.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-352">
+                <state relative-caret-position="315">
                   <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="80" />
                   <folding>
                     <element signature="e#1548#1587#0" expanded="true" />
@@ -119,12 +108,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Toast.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="614">
-                  <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+                <state relative-caret-position="21">
+                  <caret line="17" selection-start-line="17" selection-end-line="18" />
                   <folding>
                     <element signature="e#931#971#0" expanded="true" />
                   </folding>
@@ -150,8 +139,8 @@
       <find>we-form-item</find>
       <find>scale</find>
       <find>hljs</find>
-      <find>iconName</find>
       <find>http</find>
+      <find>iconName</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -196,8 +185,8 @@
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/weui/fff.vue" />
         <option value="$PROJECT_DIR$/src/weui/Plugin.js" />
-        <option value="$PROJECT_DIR$/src/weui/WeToast.vue" />
         <option value="$PROJECT_DIR$/src/components/Toast.vue" />
+        <option value="$PROJECT_DIR$/src/weui/WeToast.vue" />
       </list>
     </option>
   </component>
@@ -213,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,6 +240,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,6 +301,7 @@
       <workItem from="1558770883915" duration="728000" />
       <workItem from="1558771837456" duration="2965000" />
       <workItem from="1558968069896" duration="32133000" />
+      <workItem from="1559743934870" duration="2837000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1557907351445</created>
@@ -331,7 +321,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144673000" />
+    <option name="totallyTimeSpent" value="148435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +336,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14446793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14446793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -360,7 +350,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.0746988" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38915664" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -595,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weui/Plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/animation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
@@ -609,10 +592,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weui/WeButton.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/input.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="35" column="75" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="75" />
+        <state relative-caret-position="1512">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="e#1654#1691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/grid.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weui/Plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/button.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="80" />
+          <folding>
+            <element signature="e#1548#1587#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -633,57 +643,36 @@
     <entry file="file://$PROJECT_DIR$/src/assets/iconfont/iconfont.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weui/WeToast.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/Toast.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="21">
+          <caret line="17" selection-start-line="17" selection-end-line="18" />
           <folding>
-            <element signature="e#725#758#0" expanded="true" />
-            <element signature="e#938#1035#0" />
+            <element signature="e#931#971#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/weui/WeInput.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="625">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/grid.vue">
+    <entry file="file://$PROJECT_DIR$/src/weui/WeButton.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1913">
-          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="68" />
+        <state relative-caret-position="427">
+          <caret line="35" column="75" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/button.vue">
+    <entry file="file://$PROJECT_DIR$/src/weui/WeToast.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="80" />
+        <state relative-caret-position="264">
+          <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
           <folding>
-            <element signature="e#1548#1587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/input.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <element signature="e#1654#1691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Toast.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="e#931#971#0" expanded="true" />
+            <element signature="e#725#758#0" expanded="true" />
           </folding>
         </state>
       </provider>

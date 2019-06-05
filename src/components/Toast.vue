@@ -52,7 +52,7 @@
         methods:{
             showToastAutoClose(){
                 this.$toast(
-                    '我是出错信息',//message值为空
+                    '我是信息',//message值为空
                     {
                         autoClose:true,
                         autoCloseDelay:3,
@@ -69,24 +69,26 @@
             },
             showToastOnTop(){
                 this.$toast(
-                    '我是出错信息',//message值为空
+                    '我是信息',//message值为空
                     {
-                    autoClose:false,
-                    autoCloseDelay:0,
+                    autoClose:true,
+                    autoCloseDelay:3,
                     closeButton:{
                         callback(){
                             console.log('用户说知道了')
                         }
                     },
-                        position:'top'
+                        position:'top',
 
+                        toastType:"success",
+                        toastDetails:"我是辅助信息"
 
                 })
 
             },
             showToastOnCenter(){
                 this.$toast(
-                    '我是出错信息',//message值为空
+                    '我是警告信息',//message值为空
                     {
                         autoClose:false,
                         autoCloseDelay:0,
@@ -95,7 +97,8 @@
                                 console.log('用户说知道了')
                             }
                         },
-                        position:'center'
+                        position:'center',
+                        toastType:"warn"
 
 
                     })
