@@ -4,9 +4,11 @@
         <h1 class="weui-demo-tit">Toast</h1>
         <temp-box title="Toast类型">
             <template>
-                <we-toast toastType="info" >我是提示信息</we-toast>
-                <we-toast toastType="warn" toastDetails="我是辅助信息">我是警告提示信息</we-toast>
+                <!--<transition name="fade"><p v-if="show">tettsttsts</p></transition>-->
+                <we-toast toastType="info" v-model="isshow" >我是提示信息</we-toast>
+                <we-toast toastType="warn"  toastDetails="我是辅助信息">我是警告提示信息</we-toast>
                 <we-toast toast-type="success">我是成功提示信息</we-toast>
+                <we-button btn-style="default" btn-size="s" @click="showWeToast">Toast</we-button>
 
             </template>
             <div slot="codediv"><per-code>{{code1}}</per-code></div>
@@ -36,6 +38,7 @@
         },
         data(){
             return{
+                isshow:false,
                 code:WeToastCode,
                 code1: `
  <we-toast toastType="info" >我是提示信息</we-toast>
@@ -50,6 +53,9 @@
 
         },
         methods:{
+            showWeToast(){
+                this.isshow=!this.isshow;
+            },
             showToastAutoClose(){
                 this.$toast(
                     '我是信息',//message值为空
@@ -65,6 +71,7 @@
 
 
                     })
+
 
             },
             showToastOnTop(){

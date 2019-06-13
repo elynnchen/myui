@@ -1,5 +1,6 @@
 <template>
-   <div class="we-toast" :class="toastClasses" >
+   <transition name="fade">
+   <div class="we-toast" :class="toastClasses" v-if="show">
       <div class="we-toast-bd">
          <we-icon :name="iconName"></we-icon>
          <!--<we-icon  name="icon-success_fill"></we-icon>-->
@@ -15,6 +16,7 @@
 
       <a class="we-toast-close" @click="onClickClose" v-if="showCloseButton">×</a>
    </div>
+   </transition>
 </template>
 
 <script>
@@ -30,11 +32,15 @@ import WeButton  from './WeButton'
        components: {WeButton,WeIcon},
        data(){
           return{
+             show:true,
              showCloseButton:true,
-
           }
        },
        props:{
+          value:{
+             type:Boolean,
+             default:false
+          },
           autoClose:{
              type:Boolean,
              default:false
@@ -58,7 +64,7 @@ import WeButton  from './WeButton'
           toastType:{
              type:String,
              default:'info',
-          /*   validator(value){
+            /* validator(value){
                 return['info','feedback'].indexOf(value)
              }*/
           },
@@ -67,7 +73,7 @@ import WeButton  from './WeButton'
           position:{
              type:String,
              default:'',
-        /*     validator(value){
+         /* validator(value){
                 return['top','center'].indexOf(value)
              }*/
 
@@ -101,6 +107,11 @@ import WeButton  from './WeButton'
           }
 
        },
+       watch:{
+          value(val){
+             this.show=val;
+          }
+       },
 
        computed:{
           iconName() {
@@ -120,7 +131,7 @@ import WeButton  from './WeButton'
           toastClasses(){
              return[
                 this.position === ''? '':`position-${this.position}`,
-                this.animate === ''? '': this.animate,
+              /*  this.animate === ''? '': this.animate,*/
                 this.toastType,
                 ]
           }
@@ -166,6 +177,14 @@ import WeButton  from './WeButton'
          .svg-icon{fill: #00cb43; display: block}
 
       }
+
+   }
+   .fade-leave-active,.fade-enter-active{
+      //opacity:1;
+      transition:all 1s;
+   }
+   .fade-enter, .fade-leave-to{
+      opacity: 0;
 
    }
 
